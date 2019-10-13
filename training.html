@@ -83,27 +83,46 @@
 
 		</div>
 		<!-- Button for booking a session -->
-		<!-- Button trigger modal -->
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-			Launch demo modal
+		<button type="button" class="text-center btn btn-primary m-2" data-toggle="modal" data-target="#BookASession">
+			Book A session
 	  	</button>
 	  
-	  <!-- Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  	<!-- Modal -->
+		<div class="modal fade" id="BookASession" tabindex="-1" role="dialog" aria-labelledby="BookASessionLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 			<div class="modal-content">
+
 				<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
+					<h5 class="modal-title" id="BookASessionLabel"> Book A Session </h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
 				</div>
+
 				<div class="modal-body">
-				...
-				</div>
-				<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Save changes</button>
+					<form>
+						<div class="form-row">
+							<div class="form-group col">
+								<label for="fName"> Name </label>
+								<input type="text" class="form-control" name="FnameOfUser" placeholder="Enter your Name" id="fName">
+							</div>
+							<div class="form-group col">
+								<label for="sName"> Surname </label>
+								<input type="text" class="form-control" name="SnameOfUser" placeholder="Enter your Surname Name" id="sName">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for="email"> Email </label>
+							<input type="email" class="form-control" name="emailAddress" placeholder="Enter your email address" id="email">
+						</div>
+						<div class="form-group">
+							<label for="AdditionalInfo">Additional Info</label>
+							<textarea class="form-control" id="AdditionalInfo" name="AddInfo" rows="3"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary"> Submit </button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</form>
 				</div>
 			</div>
 			</div>
@@ -204,6 +223,53 @@
 				</div>
 			</div>
 		</section>
+	
+	<!-- Footer -->
+	<footer class="container">
+			<!-- Social media -->
+			<div class="connectUs">
+				<a href="#"><i class="fab facebook">facebook</i></a>
+				<a href="#"><i class="fab instagram">instagram</i></a>
+				<a href="#"><i class="fab twitter">twitter</i></a>
+				<a href="#"><i class="fab youtube">youtube</i></a>
+			</div>
+			
+			<div>
+				<div>
+					<h4> Address </h4>
+					<p>
+
+					</p>
+				</div>
+				<div>
+					<h4> Phone </h4>
+					<p>
+						
+					</p>
+				</div>
+				<div>
+					<h4> Email </h4>
+					<p>
+						
+					</p>
+				</div>
+			</div>
+			<hr class="my-4">
+			<p class="text-center">
+				Little Ark Ministries &copy;	
+			</p>
+			<div class="connectUs2Liz">
+				<p>
+				Proudly designed and developed by LizHack SA &copy;	
+				</p>
+				<div>
+					<a href="#"><i class="fab facebook">facebook</i></a>
+					<a href="#"><i class="fab instagram">instagram</i></a>
+					<a href="#"><i class="fab twitter">twitter</i></a>
+					<a href="#"><i class="fab youtube">youtube</i></a>
+				</div>
+			</div>
+		</footer>
 
 	</div>
 		<!-- Scripts -->
@@ -213,8 +279,6 @@
 		<script src="js/all.js"></script>
 	</body>
 
-	<!--footer>
 
-	</footer-->
 
 </html>
