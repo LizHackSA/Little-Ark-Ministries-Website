@@ -1,53 +1,148 @@
 .about {
-    padding-bottom: 2rem;
-    &__bio-image {
-        height: 50vh;
-        width: 100%;
-        background: linear-gradient( to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)), url($dummyPicture) center top;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        p {
-            margin-bottom: 2rem;
-        }
-    }
-    &__bio {
-        width: 80%;
-        text-align: center;
-        .text-secondary {
-            padding-bottom: 1rem;
-        }
-    }
-    .jobs {
-        width: 60vw;
-        margin: 2rem auto 0 auto;
+    margin: auto!important;
+    padding-top: 3rem;
+    &-mission__vision {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 2rem;
-        &__job {
-            background: lighten($primary-color, 10%);
-            padding: 0.5rem;
-            border-bottom: 5px solid $secondary-color;
-            h2,
+    }
+    &-vision {
+        background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.3)), url($lionPicture) center top;
+    }
+    &-mission {
+        background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.3)), url($handsPicture) center top;
+    }
+    &-vision,
+    &-mission {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-size: cover;
+        background-position: center center;
+        padding: 5rem;
+        height: 100vh;
+        img {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 10rem;
+            -webkit-border-radius: 10rem;
+            -moz-border-radius: 10rem;
+            -ms-border-radius: 10rem;
+            -o-border-radius: 10rem;
+        }
+        h3 {
+            text-align: center;
+            font-size: 4rem;
+            color: $primary-color;
+        }
+        p {
+            text-align: left;
+            color: $primary-color;
+            margin-top: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
+        }
+    }
+    &-the__Qs {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        &-who-is {
+            background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.3)), url($liftPicture) center top;
+        }
+        &-when-was {
+            background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.3)), url($helpPicture) center top;
+        }
+        &-who-is,
+        &-when-was {
+            display: grid;
+            grid-template-columns: 1fr;
+            background-size: cover;
+            background-position: center center;
+            padding: 5rem;
+            height: 100vh;
             h3 {
-                margin: 0.5rem 0;
+                text-align: center;
+                font-size: 2rem;
+                padding: 1rem;
+                color: $primary-color;
+                border-radius: 10rem;
+                -webkit-border-radius: 10rem;
+                -moz-border-radius: 10rem;
+                -ms-border-radius: 10rem;
+                -o-border-radius: 10rem;
+                background: rgba(0, 0, 0, 0.7);
             }
-            h6 {
-                margin: 0.3rem 0;
+            p {
+                text-align: left;
+                color: $primary-color;
+                margin-top: 2rem;
+                padding: 1.5rem;
+                border-radius: 2.5rem;
+                -webkit-border-radius: 2.5rem;
+                -moz-border-radius: 2.5rem;
+                -ms-border-radius: 2.5rem;
+                -o-border-radius: 2.5rem;
+                background: rgba(0, 0, 0, 0.7);
             }
         }
     }
-    .social-icons {
-        display: flex;
-        flex-direction: column;
+    &_quote_bg {
+        background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.7)), url($lionPicture) center top;
+        background-size: cover;
+        background-position: center center;
     }
-    footer {
-        transform: rotate(90deg) translate(-3rem, -5rem);
-        -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-        -moz-transform: rotate(90deg) translate(-3rem, -5rem);
-        -ms-transform: rotate(90deg) translate(-3rem, -5rem);
-        -o-transform: rotate(90deg) translate(-3rem, -5rem);
+    &__quotes {
+        display: flex;
+        flex-direction: row;
+        width: 95vw;
+        height: 100vh;
+        align-items: stretch;
+        margin: auto !important;
+        padding: 2rem 0.5rem;
+        &-quote {
+            margin: 0.5rem;
+            border: 2px solid $secondary-color;
+            overflow: scroll;
+            scrollbar-width: none;
+            img {
+                width: 100%;
+                height: 30%;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+            }
+            p {
+                padding: 1rem;
+                color: $primary-color;
+            }
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
+        }
+    }
+    &-portfolio {
+        background-color: brown;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0rem;
+        img {
+            width: 50%;
+            border-radius: 25rem;
+            -webkit-border-radius: 25rem;
+            -moz-border-radius: 25rem;
+            -ms-border-radius: 25rem;
+            -o-border-radius: 25rem;
+        }
+        h3 {
+            color: $primary-color;
+            font-size: 2.5rem;
+        }
     }
 }
