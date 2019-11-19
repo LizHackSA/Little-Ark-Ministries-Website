@@ -11,49 +11,53 @@
 
 <body>
 
-    <!-- Navigation  -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="container-fluid">
+    <header>
+        <!-- Navigation  -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
 
-            <!-- Logo  -->
-            <a class="navbar-brand" href="index.html"> Little Ark Ministries </a>
+                <!-- Logo  -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="Assets/img/icon.PNG" alt="Little Ark Ministries" class="navbar-brand__icon">
+                </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item ">
-                        <a class="nav-link" href="index.html"> Home </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html"> About </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="bookStore.html"> Book Store </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="training.html"> Training </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="parenting.html"> Parenting </a>
-                    </li>
-                    <!--
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"> Discussions </a>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html"> Home </a>
                         </li>
-                    -->
-                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"> About </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="bookStore.html"> Book Store </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="training.html"> Training </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="parenting.html"> Parenting </a>
+                        </li>
+                        <!--
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Discussions </a>
+                            </li>
+                        -->
+                    </ul>
+                </div>
+
             </div>
+        </nav>
+    </header>
 
-        </div>
-    </nav>
-
-    <main class="container">
+    <main class="book-store">
         <!-- Note on how to buy books -->
-        <section class="alert-warning">
+        <section class="book-store__note">
             <h4> How to Purchase books </h4>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nam quisquam eius labore rem officia. Tempore similique ab, tenetur, neque odit sapiente molestias necessitatibus maiores voluptate voluptatem nemo impedit molestiae! Suscipit adipisci
@@ -61,163 +65,300 @@
             </p>
         </section>
 
-        <!-- latest addition of books -->
-        <section>
-            <div>
-                <img src="Assets/img/DirectorProfile/icon.PNG" alt="book cover">
-                <p class="lead">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nulla ducimus! Aut nostrum adipisci id optio deserunt iusto. Provident voluptates tempore voluptas dolorem eum! Quo error unde fugit eos reiciendis accusamus, recusandae esse ipsum?
-                    Voluptates repellat enim quia est consequatur?
-                </p>
-                <a class="btn btn-primary" href="bookInfo.html"> see more </a>
-            </div>
 
-            <div>
-                <img src="Assets/img/DirectorProfile/icon.PNG" alt="book cover">
-                <p class="lead">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nulla ducimus! Aut nostrum adipisci id optio deserunt iusto. Provident voluptates tempore voluptas dolorem eum! Quo error unde fugit eos reiciendis accusamus, recusandae esse ipsum?
-                    Voluptates repellat enim quia est consequatur?
-                </p>
-                <a class="btn btn-primary" href="bookInfo.html"> see more </a>
-            </div>
+        <!-- latest addition of books -->
+
+        <section class="book-store__latest-alerts__books">
+            <h4 class="latest-book-alert"> Latest <span class="bookSpan">books</span> </h4>
+
+            <section class="book-store__latest">
+
+                <div class="book-store__book">
+                    <img src="Assets/img/DirectorProfile/icon.PNG" alt="book cover">
+                    <p class="lead">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nulla ducimus! Aut nostrum adipisci id optio deserunt iusto. Provident voluptates tempore voluptas dolorem eum! Quo error unde fugit eos reiciendis accusamus, recusandae esse ipsum?
+                        Voluptates repellat enim quia est consequatur?
+                    </p>
+                    <div class="book-store__btns">
+                        <a class="book-store__btn" href="bookInfo.html">
+                            <i class="fas fa-eye"></i> see more
+                        </a>
+                        <a class="book-store__btn" href="buyAbook.html">
+                            <i class="fas fa-cart-plus"></i> buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="book-store__book">
+                    <img src="Assets/img/DirectorProfile/icon.PNG" alt="book cover">
+                    <p class="lead">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nulla ducimus! Aut nostrum adipisci id optio deserunt iusto. Provident voluptates tempore voluptas dolorem eum! Quo error unde fugit eos reiciendis accusamus, recusandae esse ipsum?
+                        Voluptates repellat enim quia est consequatur?
+                    </p>
+                    <div class="book-store__btns">
+                        <a class="book-store__btn" href="bookInfo.html">
+                            <i class="fas fa-eye"></i> see more
+                        </a>
+                        <a class="book-store__btn" href="buyAbook.html">
+                            <i class="fas fa-cart-plus"></i> buy
+                        </a>
+                    </div>
+                </div>
+            </section>
         </section>
 
+
         <!-- list of books -->
-        <section>
-            <div>
+        <section class="book-store__books">
+            <div class="book-store__book">
                 <img src="Assets/img/DirectorProfile/icon.PNG" alt="book cover">
                 <p class="lead">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nulla ducimus! Aut nostrum adipisci id optio deserunt iusto. Provident voluptates tempore voluptas dolorem eum! Quo error unde fugit eos reiciendis accusamus, recusandae esse ipsum?
                     Voluptates repellat enim quia est consequatur?
                 </p>
-                <a class="btn btn-primary" href="bookInfo.html"> see more </a>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
             </div>
 
-            <div>
+            <div class="book-store__book">
                 <img src="Assets/img/DirectorProfile/icon.PNG" alt="book cover">
                 <p class="lead">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nulla ducimus! Aut nostrum adipisci id optio deserunt iusto. Provident voluptates tempore voluptas dolorem eum! Quo error unde fugit eos reiciendis accusamus, recusandae esse ipsum?
                     Voluptates repellat enim quia est consequatur?
                 </p>
-                <a class="btn btn-primary" href="bookInfo.html"> see more </a>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
             </div>
 
-            <div>
+            <div class="book-store__book">
                 <img src="Assets/img/DirectorProfile/icon.PNG" alt="book cover">
                 <p class="lead">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nulla ducimus! Aut nostrum adipisci id optio deserunt iusto. Provident voluptates tempore voluptas dolorem eum! Quo error unde fugit eos reiciendis accusamus, recusandae esse ipsum?
                     Voluptates repellat enim quia est consequatur?
                 </p>
-                <a class="btn btn-primary" href="bookInfo.html"> see more </a>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
             </div>
 
-            <div>
+            <div class="book-store__book">
                 <img src="Assets/img/DirectorProfile/icon.PNG" alt="book cover">
                 <p class="lead">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nulla ducimus! Aut nostrum adipisci id optio deserunt iusto. Provident voluptates tempore voluptas dolorem eum! Quo error unde fugit eos reiciendis accusamus, recusandae esse ipsum?
                     Voluptates repellat enim quia est consequatur?
                 </p>
-                <a class="btn btn-primary" href="bookInfo.html"> see more </a>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
             </div>
 
-            <div>
+            <div class="book-store__book">
                 <img src="Assets/img/DirectorProfile/icon.PNG" alt="book cover">
                 <p class="lead">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nulla ducimus! Aut nostrum adipisci id optio deserunt iusto. Provident voluptates tempore voluptas dolorem eum! Quo error unde fugit eos reiciendis accusamus, recusandae esse ipsum?
                     Voluptates repellat enim quia est consequatur?
                 </p>
-                <a class="btn btn-primary" href="bookInfo.html"> see more </a>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
             </div>
 
-            <div>
+            <div class="book-store__book">
                 <img src="Assets/img/DirectorProfile/icon.PNG" alt="book cover">
                 <p class="lead">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nulla ducimus! Aut nostrum adipisci id optio deserunt iusto. Provident voluptates tempore voluptas dolorem eum! Quo error unde fugit eos reiciendis accusamus, recusandae esse ipsum?
                     Voluptates repellat enim quia est consequatur?
                 </p>
-                <a class="btn btn-primary" href="bookInfo.html"> see more </a>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
             </div>
 
-            <div>
+            <div class="book-store__book">
                 <img src="Assets/img/DirectorProfile/icon.PNG" alt="book cover">
                 <p class="lead">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nulla ducimus! Aut nostrum adipisci id optio deserunt iusto. Provident voluptates tempore voluptas dolorem eum! Quo error unde fugit eos reiciendis accusamus, recusandae esse ipsum?
                     Voluptates repellat enim quia est consequatur?
                 </p>
-                <a class="btn btn-primary" href="bookInfo.html"> see more </a>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
             </div>
 
-            <div>
+            <div class="book-store__book">
                 <img src="Assets/img/DirectorProfile/icon.PNG" alt="book cover">
                 <p class="lead">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nulla ducimus! Aut nostrum adipisci id optio deserunt iusto. Provident voluptates tempore voluptas dolorem eum! Quo error unde fugit eos reiciendis accusamus, recusandae esse ipsum?
                     Voluptates repellat enim quia est consequatur?
                 </p>
-                <a class="btn btn-primary" href="bookInfo.html"> see more </a>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
+                <div class="book-store__btns">
+                    <a class="book-store__btn" href="bookInfo.html">
+                        <i class="fas fa-eye"></i> see more
+                    </a>
+                    <a class="book-store__btn" href="buyAbook.html">
+                        <i class="fas fa-cart-plus"></i> buy
+                    </a>
+                </div>
             </div>
 
         </section>
 
     </main>
 
-    <footer class="text-center">
-        <div class="row">
+    <footer>
+        <div class="footer-details">
             <!-- Contact details -->
-            <div class="col">
+            <div class="footer-details__contact">
                 <!-- Address -->
                 <p>
+                    Makhanda(Grahamstown), Eastern Cape, South Africa
                 </p>
                 <!-- Cell/Telephone -->
                 <p>
+                    +27 (0) 62 5464 091
                 </p>
                 <!-- Email Address -->
                 <p>
+                    info@littlearkministries.co.za
                 </p>
             </div>
 
-            <!-- Subscribe -->
-            <div class="col">
-                <!-- Address -->
+            <!-- Developer -->
+            <div class="footer-details__developer">
                 <p>
+                    designed and developed by
                 </p>
-                <!-- Cell/Telephone -->
-                <p>
-                </p>
-                <!-- Email Address -->
-                <p>
-                </p>
+
+                <!-- developer details -->
+                <h4>
+                    Sibusiso Ncanywa Devs (SN Devs)
+                </h4>
+
+                <div class="contact-develer">
+                    <!-- Email Address -->
+                    <a class="lead contact-develer__email" href="mailto:SibusisoNcanywaDevs@gmail.com">
+                                SibusisoNcanywaDevs@gmail.com
+                            </a>
+
+                    <!-- website Address -->
+                    <a class="lead contact-develer__webaddress" href="SibusisoNcanywaDevs.ml">
+                                SibusisoNcanywaDevs.ml
+                            </a>
+                </div>
+
             </div>
 
         </div>
 
         <!-- Copy right and the developer details -->
-        <div>
+        <div class="copy-right__Ark">
             <!-- copy right -->
             <h3>
                 Little Ark Ministries &copy; 2019
             </h3>
 
-            <p>
-                designed and developed by
-            </p>
-            <!-- developer details -->
-            <h4>
-                Sibusiso Ncanywa Devs (SN Devs)
-            </h4>
-
-            <div class="row">
-                <!-- Email Address -->
-                <a class="col lead" href="mailto:SibusisoNcanywaDevs@gmail.com">
-                    SibusisoNcanywaDevs@gmail.com
-                </a>
-
-                <a class="col lead" href="SibusisoNcanywaDevs.ml">
-                    SibusisoNcanywaDevs.ml
-                </a>
-
-            </div>
         </div>
-
     </footer>
     <!-- Scripts -->
     <script src="Assets/js/jquery-3.4.1.min.js"></script>
