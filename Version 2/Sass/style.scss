@@ -1,0 +1,91 @@
+@import './config';
+@import './home';
+@import './menu';
+@import './about';
+@import './projects';
+@import './contact';
+@import './responsive';
+body {
+    background: $primary-color;
+    color: set-text-color($primary-color);
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+a {
+    color: set-text-color($primary-color);
+    text-decoration: none;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    color: set-text-color($primary-color);
+}
+
+.navbar-brand__icon {
+    height: 50px;
+    border: 1px solid brown;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+footer {
+    bottom: 1rem;
+    padding: 1rem;
+    background-color: $darkBg;
+    color: $primary-color;
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+    .footer-details {
+        margin: auto!important;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        &__contact {
+            align-items: stretch;
+            justify-content: space-between;
+            text-align: center;
+        }
+        &__developer {
+            align-items: stretch;
+            justify-content: space-between;
+            text-align: center;
+        }
+    }
+    .contact-develer {
+        display: flex;
+        flex-direction: column;
+        &__email,
+        &__webaddress {
+            text-align: center;
+            padding: 0.25rem;
+            @include transition-ease;
+            &:hover {
+                color: $secondary-color;
+                text-decoration: none;
+            }
+        }
+    }
+    .copy-right__Ark {
+        padding-top: 0.5rem;
+        text-align: center;
+    }
+}

@@ -11,46 +11,51 @@
 
 <body>
 
-    <!-- Navigation  -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="container-fluid">
+    <header>
+        <!-- Navigation  -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
 
-            <!-- Logo  -->
-            <a class="navbar-brand" href="index.html"> Little Ark Ministries </a>
+                <!-- Logo  -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="Assets/img/icon.PNG" alt="Little Ark Ministries" class="navbar-brand__icon">
+                </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html"> Home </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html"> About </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="bookStore.html"> Book Store </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="training.html"> Training </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="parenting.html"> Parenting </a>
-                    </li>
-                    <!--
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"> Discussions </a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html"> Home </a>
                         </li>
-                    -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"> About </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="bookStore.html"> Book Store </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="training.html"> Training </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="parenting.html"> Parenting </a>
+                        </li>
+                        <!--
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Discussions </a>
+                            </li>
+                        -->
 
-                </ul>
+                    </ul>
+                </div>
+
             </div>
+        </nav>
 
-        </div>
-    </nav>
+    </header>
 
     <!-- Image Sliders  -->
     <div id="carouselControls" class="carousel slide" data-ride="carousel">
@@ -64,13 +69,15 @@
         <div class="carousel-inner">
             <div class="carousel-item slide1 rounded-0 active">
                 <div class="slideCanvas text-center">
-                    <h1 class="display-2"> Little Ark Ministries </h1>
+                    <h1> Welcome To </h1>
+                    <h2 class="display-2"> Little Ark Ministries </h2>
                     <h3> Teach children what you wish you knew at their age. </h3>
                 </div>
             </div>
 
             <div class="carousel-item slide2 rounded">
                 <div class="slideCanvas text-center">
+                    <h1> Welcome To </h1>
                     <h1 class="display-2"> Little Ark Ministries </h1>
                     <h3> Mould a child to be a better person. </h3>
                 </div>
@@ -78,6 +85,7 @@
 
             <div class="carousel-item slide3 rounded">
                 <div class="slideCanvas text-center">
+                    <h1> Welcome To </h1>
                     <h1 class="display-2"> Little Ark Ministries </h1>
                     <h3> Be their role model. </h3>
                 </div>
@@ -86,32 +94,69 @@
         </div>
     </div>
 
-    <!-- Welcome section  -->
-    <section class="container-fluid">
-        <div class="row welcomeNote text-center">
-            <div class="col-12">
-                <h1 class="display-4"> If you don't have <strong> fun </strong>, you won't <strong> learn </strong>
+    <main class="home">
+
+        <!-- Welcome section  -->
+        <section class="home-welcomeNote">
+            <div>
+                <h1 class="display-4">
+                    If you don't have <span class="home-welcomeNote__colorful"> fun </span>, you won't <span class="home-welcomeNote__colorful"> learn </span>
                 </h1>
             </div>
 
-            <hr>
-
-            <div class="col-12">
+            <div>
                 <p class="lead">
                     Welcome to Little Ark Ministries, We hope you'll enjoy your stay.
                 </p>
             </div>
-        </div>
-        <hr class="my-4">
-    </section>
 
-    <!-- Three column section  -->
-    <!-- Different services offered by little ark ministries  -->
-    <section class="container-fluid padding">
+            <hr class="my-4">
 
-        <div class="row text-center padding ml-auto">
-            <div class="col-xs-12 col-sm-6 col-md-4 padding ">
-                <img src="Assets/img/DummyImgs/Little ark ministries.png" class="rounded-lg border-light" alt="service one Image">
+        </section>
+
+        <!-- Favourite quotes -->
+        <section class="home-favQuotes">
+            <div id="quoteControls" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#quoteControls" data-slide-to="0" class="active"></li>
+                    <li data-target="#quoteControls" data-slide-to="1"></li>
+                    <li data-target="#quoteControls" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item home-favQuotes__quote-1 active">
+                        <div class="home-favQuotes__quote">
+                            <img src="Assets/img/quotes/hands.jpg" alt="hands">
+                            <p> We are creating an Individual Support Plan (ISP) for each child which highlights barriers and interventions. This ISP is revised every semester and discussed with parents. </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item home-favQuotes__quote-2">
+                        <div class="home-favQuotes__quote">
+                            <img src="Assets/img/quotes/lion.jpg" alt="Lion">
+                            <p> Little Ark Groom Leaders! </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item home-favQuotes__quote-3">
+                        <div class="home-favQuotes__quote">
+                            <img src="Assets/img/quotes/ostr.jpg" alt="Ostrich">
+                            <p> Little Ark step back, empower children and support them from behind. Little Ark walk fast to follow children, for she is their leader! </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Three column section  -->
+        <!-- Different services offered by little ark ministries  -->
+        <section class="home-services mx-auto">
+
+            <div class="home-services__item">
+                <img class="" src="Assets/img/DirectorProfile/icon.PNG" alt="service one Image">
                 <h3> Books For children </h3>
                 <p>
                     Here at Little Ark Ministries we believe in empowering children through books and also teach them valuable life lessons through books whose basis is the Bible.
@@ -119,8 +164,8 @@
                 <a class="btn btn-primary" href="bookStore.html"> View Book Store </a>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 padding ">
-                <img src="Assets/img/DummyImgs/Little ark ministries.png" class="rounded-lg border-light" alt="service two Image">
+            <div class="home-services__item">
+                <img class="" src="Assets/img/DirectorProfile/icon.PNG" alt="service two Image">
                 <h3> Training </h3>
                 <p>
                     We offer training to anyone who would like to understand children more and interact with them in a way that will help them interact.
@@ -128,116 +173,121 @@
                 <a class="btn btn-primary" href="training.html"> Training </a>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 padding ">
-                <img src="Assets/img/DummyImgs/Little ark ministries.png" class="rounded-lg border-light" alt="service three Image">
+            <div class="home-services__item">
+                <img class="" src="Assets/img/DirectorProfile/icon.PNG" alt="service three Image">
                 <h3> Parenting Tips </h3>
                 <p>
                     We not only focus on children, we also focus on their parents and provide tips that will allow parents interact with their children and learn more about them in a fun way. A strong equals a happy childhood.
                 </p>
                 <a class="btn btn-primary" href="parenting.html"> View parenting tips </a>
             </div>
-        </div>
+        </section>
 
-        <hr class="my-4">
+        <!-- The discussion from Instagram and Facebook -->
+        <section class="home-discussions">
+            <blockquote class="home-discussions__days-Q">
+                <h4 class="home-discussions__discuss"> Discussion of the day </h4>
+                <p>Should parents allow their children of age 12-15 to have boyfriends/girlfriends?</p>
+                <p class="sub"> please comment on facebook and instagram </p>
+            </blockquote>
 
-    </section>
+            <section class="home-discussions__feeds">
+                <!-- Facebook feed -->
+                <div class="home-discussions__feeds__facebook">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta laboriosam non modi molestiae porro quidem aliquid iusto. Dicta sit quasi, officiis at accusamus cum magnam ab mollitia suscipit, vero debitis sint natus omnis optio beatae illo expedita,
+                        nemo facilis iusto similique aspernatur quibusdam porro? Consequuntur corrupti, reprehenderit doloremque vel ducimus pariatur delectus, magnam consequatur alias ratione sequi explicabo, dolore eum? Molestiae consequatur exercitationem
+                        iusto totam eius, tempora suscipit itaque veritatis similique neque aut harum, enim praesentium quasi obcaecati illum velit in natus omnis ex nihil! Facere expedita magni, asperiores praesentium earum officiis impedit dolores eius
+                        ullam fugiat, molestias, illo doloribus repellendus adipisci in? Sapiente enim a, illo voluptatibus adipisci nobis pariatur ullam quisquam. Dolores qui, voluptatem, voluptatum neque nam doloribus quis temporibus fugit nulla repellat
+                        maiores ea laboriosam quibusdam ut ratione? Eius quibusdam perferendis non magnam fuga obcaecati, labore nihil nam voluptate fugiat natus debitis recusandae illum doloremque aspernatur harum.
+                    </p>
+                </div>
 
-    <!-- The discussion from Instagram and Facebook -->
-    <section class="container-fluid ">
-        <blockquote>
-            <h4> Discussion of the day </h4>
-            Should parents allow their children of age 12-15 to have boyfriends/girlfriends?
-        </blockquote>
+                <!-- Instagram feed -->
+                <div class="home-discussions__feeds__instagram">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut non vel temporibus dolores excepturi praesentium vitae cupiditate soluta dolorum sunt! Debitis eum quisquam perspiciatis perferendis placeat explicabo aliquid nisi quo, quis repellendus dicta
+                        doloremque odit repudiandae, voluptates nobis est. Consequatur architecto, veritatis modi accusamus repellat fuga saepe itaque incidunt minus reiciendis nostrum ratione eos eveniet temporibus soluta fugit maxime tempore necessitatibus
+                        fugiat expedita quisquam dolorem ab impedit quos. Laudantium libero eum laborum eos odit neque rerum eligendi dolores optio veritatis dolorem earum placeat ut ullam molestias eaque beatae architecto, voluptate, vel in quis! Nulla
+                        laudantium eligendi aliquam commodi, nesciunt unde aperiam dolores dignissimos perferendis sint nam ab illum neque cupiditate ad dolorem minus incidunt nemo labore. Magnam dolor, minima doloribus autem eos iure. Nihil odit dolore
+                        vitae quae delectus commodi ullam minima quisquam veniam quis deserunt, qui amet nisi pariatur veritatis tempora consectetur minus libero beatae et nobis eius? Dolores officia odit placeat accusamus, dicta dolorem laudantium cum
+                        aspernatur dolorum. Sit rem, reiciendis vero aspernatur doloribus quaerat vel quod voluptatem asperiores dolorum deleniti minus accusantium recusandae eligendi porro alias doloremque expedita, necessitatibus beatae modi sed corporis
+                        fuga. Neque recusandae debitis nesciunt voluptatibus maxime dolores maiores ut! Rem quam voluptates natus a cum facilis similique, consequatur doloremque suscipit quos? Iste, commodi error. Fugiat, sed totam, at, explicabo eius
+                        maiores qui ratione omnis voluptates dolorum beatae nisi accusantium velit tenetur ea. Natus eum exercitationem, reprehenderit sapiente, alias nesciunt vel perferendis molestias ipsam ducimus laudantium laboriosam? Voluptatum illum
+                        quod ut nam quis obcaecati?
+                    </p>
+                </div>
+            </section>
 
-        <!-- Facebook feed -->
-        <div>
+        </section>
 
-        </div>
+        <!-- Social media platforms of little ark ministries-->
+        <section class="social-icons">
+            <a href="#">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+        </section>
+    </main>
 
-        <!-- Instagram feed -->
-        <div>
-
-        </div>
-
-    </section>
-
-    <!-- Social media platforms of little ark ministries-->
-    <section class="social-icons">
-        <a href="#">
-            <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        <a href="#">
-            <i class="fab fa-facebook fa-2x"></i>
-        </a>
-        <a href="#">
-            <i class="fab fa-instagram fa-2x"></i>
-        </a>
-        <a href="#">
-            <i class="fab fa-github fa-2x"></i>
-        </a>
-    </section>
-
-    <footer class="text-center">
-        <div class="row">
+    <footer>
+        <div class="footer-details">
             <!-- Contact details -->
-            <div class="col">
+            <div class="footer-details__contact">
                 <!-- Address -->
                 <p>
+                    Makhanda(Grahamstown), Eastern Cape, South Africa
                 </p>
                 <!-- Cell/Telephone -->
                 <p>
+                    +27 (0) 62 5464 091
                 </p>
                 <!-- Email Address -->
                 <p>
+                    info@littlearkministries.co.za
                 </p>
             </div>
 
-            <!-- Subscribe -->
-            <div class="col">
-                <!-- Address -->
+            <!-- Developer -->
+            <div class="footer-details__developer">
                 <p>
+                    designed and developed by
                 </p>
-                <!-- Cell/Telephone -->
-                <p>
-                </p>
-                <!-- Email Address -->
-                <p>
-                </p>
+
+                <!-- developer details -->
+                <h4>
+                    Sibusiso Ncanywa Devs (SN Devs)
+                </h4>
+
+                <div class="contact-develer">
+                    <!-- Email Address -->
+                    <a class="lead contact-develer__email" href="mailto:SibusisoNcanywaDevs@gmail.com">
+                        SibusisoNcanywaDevs@gmail.com
+                    </a>
+
+                    <!-- website Address -->
+                    <a class="lead contact-develer__webaddress" href="SibusisoNcanywaDevs.ml">
+                        SibusisoNcanywaDevs.ml
+                    </a>
+                </div>
+
             </div>
 
         </div>
 
         <!-- Copy right and the developer details -->
-        <div>
+        <div class="copy-right__Ark">
             <!-- copy right -->
             <h3>
                 Little Ark Ministries &copy; 2019
             </h3>
 
         </div>
-
-        <div>
-            <p>
-                designed and developed by
-            </p>
-
-            <!-- developer details -->
-            <h4>
-                Sibusiso Ncanywa Devs (SN Devs)
-            </h4>
-
-            <!-- Email Address -->
-            <a class="lead" href="mailto:SibusisoNcanywaDevs@gmail.com">
-                SibusisoNcanywaDevs@gmail.com
-            </a>
-
-            <!-- website Address -->
-            <a class="lead" href="SibusisoNcanywaDevs.ml">
-                SibusisoNcanywaDevs.ml
-            </a>
-
-        </div>
-
     </footer>
     <!-- Scripts -->
     <script src="Assets/js/jquery-3.4.1.min.js"></script>
