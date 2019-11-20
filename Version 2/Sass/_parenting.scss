@@ -1,17 +1,31 @@
-.projects {
+.parenting {
     padding-bottom: 2rem;
-    &__bio-image {
-        height: 40vh;
+    &-tip_of_day {
+        height: 50vh;
         width: 100%;
-        background: linear-gradient( to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)), url($dummyPicture) center top;
+        color: $primary-color;
+        background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.3)), url($dummyPicture) center top;
         background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        .text-secondary {
-            font-size: 2rem;
+        p {
+            font-size: 1.5rem;
             margin-bottom: 2rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            background: rgba(0, 0, 0, 0.555);
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
+        }
+        h4 {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 3rem;
         }
     }
     &__items {
@@ -21,64 +35,85 @@
         grid-template-columns: 1fr;
         grid-gap: 2rem;
     }
-    &__item {
+    &__tip-1 {
+        background-image: url("../img/background1.jpg");
+    }
+    &__tip-2 {
+        background-image: url("../img/background1.jpg");
+    }
+    &__tip-3 {
+        background-image: url("../img/background1.jpg");
+    }
+    &__tip-4 {
+        background-image: url("../img/background1.jpg");
+    }
+    &__tip-1,
+    &__tip-2,
+    &__tip-3,
+    &__tip-4,
+    &__tip-5,
+    &__tip-6 {
+        background-position: center center;
         position: relative;
-        border-bottom: 5px solid $secondary-color;
         overflow: hidden;
-        cursor: pointer;
         img {
             width: 100%;
+            height: 80%;
+            margin: 6rem;
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
         }
-        &::after {
-            content: '';
-            position: absolute;
-            top: 100%;
-            left: 0;
-            height: 100%;
+        p {
+            background: rgba(0, 0, 0, 0.555);
+            color: $primary-color;
+            padding: 0.6rem;
+            margin: 7rem;
+            border-radius: 0.8rem;
+            -webkit-border-radius: 0.8rem;
+            -moz-border-radius: 0.8rem;
+            -ms-border-radius: 0.8rem;
+            -o-border-radius: 0.8rem;
+        }
+        .parenting__tip {
+            display: grid;
+            height: 100vh;
             width: 100%;
-            background: $secondary-color;
-            opacity: 0;
-            @include transition-ease;
-        }
-        &:hover {
-            &::after {
-                top: 0;
-                opacity: 0.9;
-            }
-            .projects__btn {
-                opacity: 1;
-            }
+            background-size: cover;
+            margin: auto!important;
+            grid-template-columns: repeat(2, 1fr);
+            background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.7)), url($dummyPicture) center top;
         }
     }
-    &__btns {
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
+    &__quote {
         display: grid;
+        margin: auto!important;
         grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        text-align: center;
-    }
-    &__btn {
-        opacity: 0;
-        font-size: 1.5rem;
-        color: set-text-color($secondary-color);
-        @include transition-ease;
-        &:hover {
-            color: set-text-color(set-text-color($secondary-color));
+        img {
+            height: 70%;
+            width: 100%;
+            margin: 3rem 2rem;
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
+        }
+        p {
+            margin: 3rem;
+            padding: 0.5rem;
+            background: rgba(0, 0, 0, 0.555);
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
         }
     }
     .social-icons {
         display: flex;
         flex-direction: column;
-    }
-    footer {
-        transform: rotate(90deg) translate(-3rem, -5rem);
-        -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-        -moz-transform: rotate(90deg) translate(-3rem, -5rem);
-        -ms-transform: rotate(90deg) translate(-3rem, -5rem);
-        -o-transform: rotate(90deg) translate(-3rem, -5rem);
     }
 }
