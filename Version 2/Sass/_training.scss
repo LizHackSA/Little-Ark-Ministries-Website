@@ -1,7 +1,7 @@
 .training {
     padding-bottom: 2rem;
     &-who_train {
-        height: 40vh;
+        height: 45vh;
         color: $primary-color;
         padding: 0.5rem;
         width: 100%;
@@ -159,5 +159,9 @@
             -ms-border-radius: 0.5rem;
             -o-border-radius: 0.5rem;
         }
+    }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
     }
 }

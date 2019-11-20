@@ -162,29 +162,4 @@
             -o-border-radius: 0.25rem;
         }
     }
-    .social-icons {
-        position: fixed;
-        bottom: 1rem;
-        left: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        .fa-twitter {
-            color: lightblue;
-        }
-        .fa-facebook {
-            color: blue;
-        }
-        .fa-instagram {
-            color: purple;
-        }
-        .fa-twitter,
-        .fa-facebook,
-        .fa-instagram {
-            margin: 0.4rem 0;
-            @include transition-ease;
-            &:hover {
-                color: $secondary-color;
-            }
-        }
-    }
 }

@@ -26,15 +26,23 @@
         }
     }
     &__latest-alerts__books {
-        height: 100vh;
+        height: 100%;
         .book-store__latest {
             width: 80vw;
             margin: 2rem auto 0 auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 2rem;
+            background: rgba(43, 177, 10, 0.63);
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
         }
         .latest-book-alert {
+            color: rgba(177, 152, 10, 0.932);
+            font-weight: bold;
             .bookSpan {
                 font-style: italic;
                 color: $secondary-color;
@@ -42,16 +50,12 @@
             }
             position: relative;
             font-size: 3.5rem;
-            transform: rotate(90deg) translate(38rem, 27.5rem);
-            -webkit-transform: rotate(90deg) translate(38rem, 27.5rem);
-            -moz-transform: rotate(90deg) translate(38rem, 27.5rem);
-            -ms-transform: rotate(90deg) translate(38rem, 27.5rem);
-            -o-transform: rotate(90deg) translate(38rem, 27.5rem);
+            text-align: center;
         }
     }
     &__books {
         width: 80vw;
-        margin: 2rem auto 0 auto;
+        margin: 3rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
@@ -61,6 +65,12 @@
         border-bottom: 5px solid $secondary-color;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.514) !important;
         overflow: hidden;
+        &-price {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: bold;
+            color: $secondary-color;
+        }
         p {
             padding: 0.5rem;
         }

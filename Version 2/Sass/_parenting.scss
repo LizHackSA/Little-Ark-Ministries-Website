@@ -1,5 +1,4 @@
 .parenting {
-    padding-bottom: 2rem;
     &-tip_of_day {
         height: 50vh;
         width: 100%;
@@ -78,23 +77,25 @@
             -o-border-radius: 0.8rem;
         }
         .parenting__tip {
-            display: grid;
+            display: flex;
+            flex-direction: row;
             height: 100vh;
             width: 100%;
             background-size: cover;
             margin: auto!important;
-            grid-template-columns: repeat(2, 1fr);
             background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.7)), url($dummyPicture) center top;
         }
     }
     &__quote {
-        display: grid;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
         margin: auto!important;
-        grid-template-columns: repeat(2, 1fr);
+        background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.7)), url($lionPicture) center top;
         img {
             height: 70%;
-            width: 100%;
-            margin: 3rem 2rem;
+            width: 80%;
+            margin: 3rem 4rem;
             border-radius: 0.5rem;
             -webkit-border-radius: 0.5rem;
             -moz-border-radius: 0.5rem;
@@ -104,6 +105,8 @@
         p {
             margin: 3rem;
             padding: 0.5rem;
+            color: $primary-color;
+            font-size: medium;
             background: rgba(0, 0, 0, 0.555);
             border-radius: 0.5rem;
             -webkit-border-radius: 0.5rem;

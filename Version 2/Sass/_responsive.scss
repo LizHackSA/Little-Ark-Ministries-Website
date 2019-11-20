@@ -1,64 +1,912 @@
-@include media-md {
-    .menu-btn {
-        visibility: hidden;
+/*---Media Queries --*/
+
+@media (max-width: 1600px) {
+    .about-mission,
+    .about-vision {
+        display: flex !important;
+        flex-direction: row !important;
+        padding: 2rem;
+        h3 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+        p {
+            padding-bottom: 0.5rem;
+            margin: 1.5rem;
+            margin-bottom: 5rem;
+        }
+        img {
+            height: 50%;
+            width: 100%;
+            margin: 0rem !important;
+        }
     }
-    .nav {
-        visibility: visible;
-        .menu-nav {
-            display: block;
-            transform: translateY(0);
-            height: 100%;
-            background: transparent;
-            text-align: right;
-            -webkit-transform: translateY(0);
-            -moz-transform: translateY(0);
-            -ms-transform: translateY(0);
-            -o-transform: translateY(0);
-            &__item {
-                display: inline;
-                padding-right: 1.5rem;
+    .book-store__books {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-gap: 1.5rem;
+    }
+    .parenting__tip-1,
+    .parenting__tip-2,
+    .parenting__tip-3,
+    .parenting__tip-4,
+    .parenting__tip-5,
+    .parenting__tip-6 {
+        img {
+            width: 80% !important;
+            height: 50% !important;
+            margin: 5rem auto !important;
+        }
+        p {
+            text-align: center;
+            font-size: 1.1rem !important;
+            padding: 0.6rem !important;
+            margin: 1rem !important;
+        }
+        .parenting__tip {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+    }
+    .parenting__quote {
+        display: flex !important;
+        flex-direction: row !important;
+        padding: 0.5rem;
+        img {
+            width: 90% !important;
+            height: 70% !important;
+            margin: 2rem auto !important;
+        }
+        p {
+            margin: 1.5rem auto !important;
+            margin-left: 0.5rem!important;
+            margin-top: 0.5rem;
+            font-size: 1.2rem !important;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-mission,
+    .about-vision {
+        display: flex !important;
+        flex-direction: row !important;
+        padding: 2rem;
+        h3 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+        p {
+            padding-bottom: 0.5rem;
+            margin: 1.5rem;
+            margin-bottom: 5rem;
+        }
+        img {
+            height: 50%;
+            width: 100%;
+            margin: 0rem !important;
+        }
+    }
+    .about-the__Qs {
+        margin: auto !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        height: 100%;
+        &-who-is,
+        &-when-was {
+            background-size: cover;
+            background-position: center center;
+            padding: 2rem;
+            height: 100vh;
+            h3 {
+                font-size: 2rem;
+                background: rgba(0, 0, 0, 0);
+                padding: 1rem;
             }
-            &__link {
-                font-size: 1.5rem;
+            p {
+                padding: 1rem;
             }
         }
     }
-    .about__bio {
-        font-size: 1.5rem;
+    .about__quotes {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 95vw;
     }
-    .projects {
-        &__bio-image {
-            height: 40vh;
+    .about-portfolio {
+        img {
+            width: 70%;
+            border-radius: 2.5rem;
+            -webkit-border-radius: 2.5rem;
+            -moz-border-radius: 2.5rem;
+            -ms-border-radius: 2.5rem;
+            -o-border-radius: 2.5rem;
         }
-        &__items {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .text-secondary {
-            font-size: 3rem;
+        h3 {
+            color: $primary-color;
+            font-size: 1.5rem;
         }
     }
-    .contact__list {
+    .book-store__note {
+        h4 {
+            font-size: 2.3rem !important;
+        }
+        p {
+            font-size: 1.3rem !important;
+        }
+    }
+    .book-store__latest-alerts__books {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        padding-bottom: 1.5rem;
+    }
+    .latest-book-alert {
+        padding-top: 0.5rem;
+        text-align: center;
+        font-size: 2.5rem !important;
+        position: relative !important;
+        transform: rotate(0deg)!important;
+        -webkit-transform: rotate(0deg)!important;
+        -moz-transform: rotate(0deg)!important;
+        -ms-transform: rotate(0deg)!important;
+        -o-transform: rotate(0deg)!important;
+    }
+    .book-store__latest {
+        margin: 2rem auto 0 auto;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-gap: 0.5rem;
+    }
+    .book-store__book {
+        &-price {
+            padding-top: 1rem !important;
+            font-size: 1.5rem !important;
+        }
+        p {
+            font-size: 1.2rem !important;
+        }
+    }
+    .book-store__books {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-gap: 1.5rem;
+    }
+    .book-store__btn {
+        font-size: 1.2rem !important;
+    }
+    .training-who_train {
+        height: 50vh;
+        padding: 0.5rem;
+        width: 100%;
+        h3 {
+            font-size: 1.5rem !important;
+        }
+        p {
+            font-size: 1.1rem !important;
+        }
+    }
+    .training-how_to_book {
+        height: 35vh;
+        padding: 0.5rem;
+        width: 100%;
+        p {
+            font-size: 1.1rem !important;
+        }
+        h3 {
+            font-size: 1.5rem !important;
+        }
+    }
+    .training-testimonials {
+        h3 {
+            font-size: 2.3rem !important;
+        }
+    }
+    .training-testimonials-collection {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-gap: 2rem !important;
+    }
+    .training__testimonial {
+        .testimonial-head {
+            .testimonial-col-1 {
+                font-size: 1.5rem !important;
+            }
+            .testimonial-col-2 {
+                font-size: 1.8rem !important;
+                span {
+                    font-size: 0.9rem !important;
+                    padding-top: 0.25rem;
+                }
+            }
+        }
+        p {
+            font-size: 0.8rem !important;
+        }
+    }
+    .training-gallary {
+        h4 {
+            font-size: 1.7rem !important;
+        }
+    }
+    .parenting-tip_of_day {
+        p {
+            font-size: 1.1rem !important;
+        }
+        h4 {
+            font-size: 1.7rem !important;
+        }
+    }
+    .parenting__tip-1,
+    .parenting__tip-2,
+    .parenting__tip-3,
+    .parenting__tip-4,
+    .parenting__tip-5,
+    .parenting__tip-6 {
+        img {
+            width: 80% !important;
+            height: 50% !important;
+            margin: 5rem auto !important;
+        }
+        p {
+            text-align: center;
+            font-size: 1.1rem !important;
+            padding: 0.6rem !important;
+            margin: 1rem !important;
+        }
+        .parenting__tip {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+    }
+    .parenting__quote {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 0.5rem;
+        img {
+            width: 80% !important;
+            height: 50% !important;
+            margin: 2rem auto !important;
+        }
+        p {
+            margin: 1.5rem auto !important;
+            margin-top: 0.5rem;
+            font-size: 1.2rem !important;
+        }
+    }
+    .bookInfo-book {
+        width: 100%;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        p {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+        }
+        &_price_img {
+            width: 90vw;
+            height: 50vh;
+            margin: auto!important;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 0.2rem;
+            img {
+                padding-top: 0.5rem;
+                width: 100%;
+                height: 85%;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .slideCanvas {
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            padding: auto 2.5rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+    .home-welcomeNote {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+    .home-favQuotes__quote {
+        img {
+            width: 50%;
+            height: 50%;
+        }
+        p {
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    }
+    .home-services {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
-@include media-lg {
-    .projects {
-        &__items {
-            grid-template-columns: repeat(3, 1fr);
+    .home-discussions__feeds {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footer-details {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        .footer-details__developer {
+            h4 {
+                font-size: 1rem;
+            }
+        }
+        .contact-develer {
+            a {
+                font-size: 1rem;
+            }
         }
     }
-    .contact__list {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 5%;
-        align-items: center;
+    .footer-details__developer {
+        border-top: 2px solid $secondary-color;
+        padding-top: 0.5rem;
+    }
+    .copy-right__Ark {
+        h3 {
+            font-size: 1rem;
+        }
+    }
+    .about-mission,
+    .about-vision {
+        display: flex !important;
+        flex-direction: row !important;
+        padding: 2rem;
+        h3 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+        p {
+            padding-bottom: 0.5rem;
+            margin: 1.5rem;
+            margin-bottom: 5rem;
+        }
+        img {
+            height: 50%;
+            width: 100%;
+            margin: 0rem !important;
+        }
+    }
+    .about-the__Qs {
+        margin: auto !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        height: 100%;
+        &-who-is,
+        &-when-was {
+            background-size: cover;
+            background-position: center center;
+            padding: 2rem;
+            height: 100vh;
+            h3 {
+                font-size: 2rem;
+                background: rgba(0, 0, 0, 0);
+                padding: 1rem;
+            }
+            p {
+                padding: 1rem;
+            }
+        }
+    }
+    .about__quotes {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 95vw;
+    }
+    .about-portfolio {
+        img {
+            width: 70%;
+            border-radius: 2.5rem;
+            -webkit-border-radius: 2.5rem;
+            -moz-border-radius: 2.5rem;
+            -ms-border-radius: 2.5rem;
+            -o-border-radius: 2.5rem;
+        }
+        h3 {
+            color: $primary-color;
+            font-size: 1.5rem;
+        }
+    }
+    .book-store__note {
+        h4 {
+            font-size: 2.3rem !important;
+        }
+        p {
+            font-size: 1.3rem !important;
+        }
+    }
+    .book-store__latest-alerts__books {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        padding-bottom: 1.5rem;
+    }
+    .latest-book-alert {
+        padding-top: 0.5rem;
+        text-align: center;
+        font-size: 2.5rem !important;
+        position: relative !important;
+        transform: rotate(0deg)!important;
+        -webkit-transform: rotate(0deg)!important;
+        -moz-transform: rotate(0deg)!important;
+        -ms-transform: rotate(0deg)!important;
+        -o-transform: rotate(0deg)!important;
+    }
+    .book-store__latest {
+        margin: 2rem auto 0 auto;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-gap: 0.5rem;
+    }
+    .book-store__book {
+        &-price {
+            padding-top: 1rem !important;
+            font-size: 1.5rem !important;
+        }
+        p {
+            font-size: 1.2rem !important;
+        }
+    }
+    .book-store__books {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-gap: 1.5rem;
+    }
+    .book-store__btn {
+        font-size: 1.2rem !important;
+    }
+    .training-who_train {
+        height: 50vh;
+        padding: 0.5rem;
+        width: 100%;
+        h3 {
+            font-size: 1.5rem !important;
+        }
+        p {
+            font-size: 1.1rem !important;
+        }
+    }
+    .training-how_to_book {
+        height: 35vh;
+        padding: 0.5rem;
+        width: 100%;
+        p {
+            font-size: 1.1rem !important;
+        }
+        h3 {
+            font-size: 1.5rem !important;
+        }
+    }
+    .training-testimonials {
+        h3 {
+            font-size: 1.7rem !important;
+        }
+    }
+    .training-testimonials-collection {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-gap: 2rem !important;
+    }
+    .training__testimonial {
+        .testimonial-head {
+            .testimonial-col-1 {
+                font-size: 1.5rem !important;
+            }
+            .testimonial-col-2 {
+                font-size: 1rem !important;
+                span {
+                    font-size: 0.7rem !important;
+                }
+            }
+        }
+        p {
+            font-size: 0.8rem !important;
+        }
+    }
+    .training-gallary {
+        h4 {
+            font-size: 1.7rem !important;
+        }
+    }
+    .parenting-tip_of_day {
+        p {
+            font-size: 1.1rem !important;
+        }
+        h4 {
+            font-size: 1.7rem !important;
+        }
+    }
+    .parenting__tip-1,
+    .parenting__tip-2,
+    .parenting__tip-3,
+    .parenting__tip-4,
+    .parenting__tip-5,
+    .parenting__tip-6 {
+        img {
+            width: 80% !important;
+            height: 50% !important;
+            margin: 5rem auto !important;
+        }
+        p {
+            text-align: center;
+            font-size: 1.1rem !important;
+            padding: 0.6rem !important;
+            margin: 1rem !important;
+        }
+        .parenting__tip {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+    }
+    .parenting__quote {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 0.5rem;
+        img {
+            width: 80% !important;
+            height: 50% !important;
+            margin: 2rem auto !important;
+        }
+        p {
+            margin: 1.5rem auto !important;
+            margin-top: 0.5rem;
+            font-size: 1.2rem !important;
+        }
+    }
+    .bookInfo-book {
+        width: 100%;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        p {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+        }
+        &_price_img {
+            width: 90vw;
+            height: 50vh;
+            margin: auto!important;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 0.2rem;
+            img {
+                padding-top: 0.5rem;
+                width: 100%;
+                height: 85%;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
     }
 }
 
-@include media-xl {
-    .projects {
-        &__bio-image {
-            height: 50vh;
+@media (max-width: 576px) {
+    .slideCanvas {
+        h1 {
+            font-size: 1rem!important;
+        }
+        h2 {
+            font-size: 1.2rem!important;
+            font-weight: bold;
+            padding: auto 2.5rem;
+        }
+        h3 {
+            font-size: 1rem!important;
+        }
+    }
+    .home-welcomeNote {
+        h1 {
+            font-size: 1.5rem!important;
+        }
+    }
+    .home-favQuotes__quote {
+        img {
+            visibility: collapse;
+        }
+        p {
+            font-size: 1rem!important;
+            text-align: center;
+        }
+    }
+    .home-services {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .home-discussions__feeds {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footer-details {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        .footer-details__developer {
+            h4 {
+                font-size: 1rem;
+            }
+        }
+        .contact-develer {
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+    .footer-details__developer {
+        border-top: 2px solid $secondary-color;
+        padding-top: 0.5rem;
+    }
+    .copy-right__Ark {
+        h3 {
+            font-size: 1rem;
+        }
+    }
+    .about-mission,
+    .about-vision {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        h3 {
+            font-size: 2.5rem !important;
+            margin-top: 2rem;
+        }
+        p {
+            font-size: 1rem;
+            margin: 0 !important;
+            margin-right: 0.25rem !important;
+            margin-top: -10rem !important;
+        }
+        img {
+            visibility: collapse !important;
+        }
+    }
+    .about-the__Qs {
+        margin: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100%;
+        width: 100%;
+        &-who-is,
+        &-when-was {
+            display: flex !important;
+            flex-direction: column !important;
+            background-size: cover;
+            background-position: center center;
+            padding: 2rem;
+            height: 100vh;
+            h3 {
+                margin-bottom: 0.5rem !important;
+                font-size: 1.5rem !important;
+            }
+            p {
+                font-size: 1rem !important;
+                padding: 1rem !important;
+                margin-top: -0.5rem !important;
+            }
+        }
+    }
+    .about__quotes {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 90vw !important;
+    }
+    .about__quotes-quote {
+        overflow: hidden;
+        padding-bottom: 0.5rem;
+        p {
+            font-size: 1rem !important;
+        }
+        img {
+            height: 40% !important;
+            width: 100% !important;
+        }
+    }
+    .about-portfolio {
+        img {
+            width: 70%;
+            border-radius: 1.5rem;
+            -webkit-border-radius: 1.5rem;
+            -moz-border-radius: 1.5rem;
+            -ms-border-radius: 1.5rem;
+            -o-border-radius: 1.5rem;
+        }
+        h3 {
+            color: $primary-color;
+            font-size: 1.5rem !important;
+        }
+        p {
+            font-size: 1rem !important;
+        }
+    }
+    .social-icons {
+        font-size: 0.8rem;
+    }
+    .book-store__note {
+        h4 {
+            font-size: 1.5rem !important;
+        }
+        p {
+            font-size: 1rem !important;
+        }
+    }
+    .book-store__latest-alerts__books {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        padding-bottom: 1.5rem;
+    }
+    .latest-book-alert {
+        padding-top: 0.5rem;
+        text-align: center;
+        font-size: 1.5rem !important;
+        position: absolute!important;
+        transform: rotate(0deg)!important;
+        -webkit-transform: rotate(0deg)!important;
+        -moz-transform: rotate(0deg)!important;
+        -ms-transform: rotate(0deg)!important;
+        -o-transform: rotate(0deg)!important;
+    }
+    .book-store__latest {
+        margin: 2rem auto 0 auto;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-gap: 0.5rem;
+    }
+    .latest-book-alert {
+        position: relative !important;
+        font-size: 1.5rem !important;
+    }
+    .book-store__book {
+        &-price {
+            padding-top: 1rem !important;
+            font-size: 1rem !important;
+        }
+        p {
+            font-size: 1rem !important;
+        }
+        img {
+            width: 100% !important;
+            height: 30% !important;
+        }
+    }
+    .book-store__btn {
+        font-size: 1rem !important;
+    }
+    .training-who_train {
+        height: 50vh;
+        padding: 0.5rem;
+        width: 100%;
+        h3 {
+            font-size: 1rem !important;
+        }
+        p {
+            font-size: 0.8rem !important;
+        }
+    }
+    .training-how_to_book {
+        height: 35vh;
+        padding: 0.5rem;
+        width: 100%;
+        p {
+            font-size: 0.8rem !important;
+        }
+        h3 {
+            font-size: 1rem !important;
+        }
+    }
+    .training-testimonials {
+        h3 {
+            font-size: 1.5rem !important;
+        }
+    }
+    .training-testimonials-collection {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-gap: 2rem !important;
+    }
+    .training__testimonial {
+        .testimonial-head {
+            .testimonial-col-1 {
+                font-size: 1.5rem !important;
+            }
+            .testimonial-col-2 {
+                font-size: 1rem !important;
+                span {
+                    font-size: 0.5rem !important;
+                }
+            }
+        }
+        p {
+            font-size: 0.8rem !important;
+        }
+    }
+    .training-gallary {
+        h4 {
+            font-size: 1.5rem !important;
+        }
+    }
+    .parenting-tip_of_day {
+        p {
+            font-size: 0.8rem !important;
+        }
+        h4 {
+            font-size: 1.3rem !important;
+        }
+    }
+    .parenting__tip-1,
+    .parenting__tip-2,
+    .parenting__tip-3,
+    .parenting__tip-4,
+    .parenting__tip-5,
+    .parenting__tip-6 {
+        img {
+            width: 80% !important;
+            height: 50% !important;
+            margin: 5rem auto !important;
+        }
+        p {
+            font-size: 0.8rem !important;
+            padding: 0.6rem !important;
+            margin: 1rem !important;
+        }
+        .parenting__tip {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+    }
+    .parenting__quote {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 0.5rem;
+        img {
+            width: 80% !important;
+            height: 50% !important;
+            margin: 2rem auto !important;
+        }
+        p {
+            margin: 1.5rem auto !important;
+            margin-top: 0.5rem;
+            font-size: 0.8rem !important;
+        }
+    }
+    .bookInfo-book {
+        width: 100%;
+        height: 100vh;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        p {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        &_price_img {
+            margin: auto!important;
+            margin-top: 2.5rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.2rem;
+            img {
+                width: 100%;
+                height: 80%;
+            }
+            h3 {
+                font-size: 1.1rem;
+            }
         }
     }
 }
