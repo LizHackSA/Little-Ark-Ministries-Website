@@ -20,6 +20,14 @@
             -moz-border-radius: 0.5rem;
             -ms-border-radius: 0.5rem;
             -o-border-radius: 0.5rem;
+            a {
+                color: greenyellow;
+                text-decoration: none;
+                @include transition-ease;
+                &:hover {
+                    color: blue;
+                }
+            }
         }
         h4 {
             font-size: 2.5rem;
@@ -49,6 +57,8 @@
             margin: 0.5rem;
             border: 1px dashed $secondary-color;
             padding: 0.5rem;
+            @include transition-ease;
+            text-decoration: none;
             &:hover {
                 color: $secondary-color;
             }
