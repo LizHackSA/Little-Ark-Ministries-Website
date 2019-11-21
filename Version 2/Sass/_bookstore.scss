@@ -25,39 +25,63 @@
             font-size: 2.5rem;
         }
     }
-    &__latest-alerts__books {
-        height: 100%;
-        .book-store__latest {
-            width: 80vw;
-            margin: 2rem auto 0 auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 2rem;
-            background: rgba(43, 177, 10, 0.63);
+    .author-latest {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        &__book-alert {
+            height: 100%;
+            color: rgba(177, 152, 10, 0.932);
+            font-weight: bold;
+            position: relative;
+            font-size: 3rem;
+            text-align: center;
+            .bookSpan {
+                font-style: italic;
+                color: $secondary-color;
+                font-weight: bold;
+            }
+        }
+        &__author {
+            color: rgba(177, 152, 10, 0.932);
+            font-weight: bold;
+            font-size: 3rem;
+            text-align: center;
+            margin: 0.5rem;
+            border: 1px dashed $secondary-color;
+            padding: 0.5rem;
+            &:hover {
+                color: $secondary-color;
+            }
             border-radius: 0.5rem;
             -webkit-border-radius: 0.5rem;
             -moz-border-radius: 0.5rem;
             -ms-border-radius: 0.5rem;
             -o-border-radius: 0.5rem;
         }
-        .latest-book-alert {
-            color: rgba(177, 152, 10, 0.932);
-            font-weight: bold;
-            .bookSpan {
-                font-style: italic;
-                color: $secondary-color;
-                font-weight: bold;
-            }
-            position: relative;
-            font-size: 3.5rem;
-            text-align: center;
-        }
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+    }
+    .book-store__latest {
+        width: 80vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        background: rgba(43, 177, 10, 0.63);
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
     }
     &__books {
         width: 80vw;
         margin: 3rem auto 0 auto;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
     }
     &__book {

@@ -38,7 +38,22 @@
             color: $primary-color;
             margin-top: 2rem;
             background: rgba(0, 0, 0, 0.7);
-            padding: 1rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
+        }
+        ul {
+            background: rgba(0, 0, 0, 0.7) !important;
+            padding: 0.6rem;
+            list-style: none;
+            margin-top: 2rem;
+            li {
+                text-align: left;
+                color: $primary-color !important;
+            }
             border-radius: 0.5rem;
             -webkit-border-radius: 0.5rem;
             -moz-border-radius: 0.5rem;
@@ -63,7 +78,7 @@
             flex-direction: column;
             background-size: cover;
             background-position: center center;
-            padding: 5rem;
+            padding: 0.5rem;
             height: 100vh;
             h3 {
                 text-align: center;
@@ -79,7 +94,7 @@
             p {
                 text-align: left;
                 color: $primary-color;
-                margin-top: 2rem;
+                margin-top: 0.5rem;
                 padding: 1.5rem;
                 border-radius: 2.5rem;
                 -webkit-border-radius: 2.5rem;
@@ -100,7 +115,6 @@
         flex-direction: row;
         width: 95vw;
         height: 100vh;
-        align-items: stretch;
         margin: auto !important;
         padding: 2rem 0.5rem;
         &-quote {
@@ -111,12 +125,12 @@
             scrollbar-width: thin;
             img {
                 width: 100%;
-                height: 40%;
+                height: 50%;
                 border-top-left-radius: 0.5rem;
                 border-top-right-radius: 0.5rem;
             }
             p {
-                padding: 1rem;
+                padding: 0.5rem;
                 color: $primary-color;
             }
             border-radius: 0.5rem;
@@ -143,6 +157,12 @@
         h3 {
             color: $primary-color;
             font-size: 2.5rem;
+        }
+        p {
+            color: $primary-color;
+        }
+        #message {
+            font-style: italic;
         }
     }
     .social-icons {

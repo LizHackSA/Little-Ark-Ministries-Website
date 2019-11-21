@@ -1,25 +1,25 @@
 .training {
     padding-bottom: 2rem;
     &-who_train {
-        height: 45vh;
+        height: 40vh;
         color: $primary-color;
         padding: 0.5rem;
         width: 100%;
-        background: linear-gradient( to right, rgba($secondary-color, 0.9), rgba($darkBg, 0.3)), url($dummyPicture) center top;
+        background: linear-gradient( to right, rgba($secondary-color, 0.9), rgba($darkBg, 0.5)), url($dummyPicture) center top;
         background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
         h3 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: $primary-color;
         }
         p {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             margin-bottom: 2rem;
             padding: 0.5rem;
-            background: rgba(0, 0, 0, 0.418);
+            background: rgba(0, 0, 0, 0.603);
             border-radius: 0.5rem;
             -webkit-border-radius: 0.5rem;
             -moz-border-radius: 0.5rem;
@@ -28,29 +28,34 @@
         }
     }
     &-how_to_book {
-        height: 35vh;
+        height: 60vh;
         color: $primary-color;
         width: 100%;
         padding: 0.5rem;
-        background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.3)), url($dummyPicture) center top;
+        background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.5)), url($dummyPicture) center top;
         background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
+        h3 {
+            font-size: 1.5rem;
+        }
         p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            margin-top: 0.2rem !important;
+            margin-bottom: 0.2rem !important;
             padding: 0.5rem;
-            background: rgba(0, 0, 0, 0.356);
+            background: rgba(0, 0, 0, 0.582);
             border-radius: 0.5rem;
             -webkit-border-radius: 0.5rem;
             -moz-border-radius: 0.5rem;
             -ms-border-radius: 0.5rem;
             -o-border-radius: 0.5rem;
-        }
-        h3 {
-            font-size: 2rem;
+            span {
+                color: $secondary-color;
+                font-weight: bold;
+            }
         }
     }
     &-testimonials {

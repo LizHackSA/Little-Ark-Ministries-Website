@@ -34,24 +34,9 @@
         grid-template-columns: 1fr;
         grid-gap: 2rem;
     }
-    &__tip-1 {
-        background-image: url("../img/background1.jpg");
-    }
-    &__tip-2 {
-        background-image: url("../img/background1.jpg");
-    }
-    &__tip-3 {
-        background-image: url("../img/background1.jpg");
-    }
-    &__tip-4 {
-        background-image: url("../img/background1.jpg");
-    }
     &__tip-1,
     &__tip-2,
-    &__tip-3,
-    &__tip-4,
-    &__tip-5,
-    &__tip-6 {
+    &__tip-3 {
         background-position: center center;
         position: relative;
         overflow: hidden;

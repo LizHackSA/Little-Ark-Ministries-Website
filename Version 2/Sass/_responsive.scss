@@ -73,8 +73,8 @@
         flex-direction: row !important;
         padding: 2rem;
         h3 {
-            font-size: 2.5rem;
-            margin-top: 2rem;
+            font-size: 2.2rem;
+            margin-top: 1.5rem;
         }
         p {
             padding-bottom: 0.5rem;
@@ -99,12 +99,14 @@
             padding: 2rem;
             height: 100vh;
             h3 {
-                font-size: 2rem;
+                font-size: 1.7rem;
                 background: rgba(0, 0, 0, 0);
-                padding: 1rem;
+                padding: 0.5rem;
+                margin: 0.5rem;
             }
             p {
                 padding: 1rem;
+                margin: 0.5rem;
             }
         }
     }
@@ -136,21 +138,15 @@
             font-size: 1.3rem !important;
         }
     }
-    .book-store__latest-alerts__books {
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        padding-bottom: 1.5rem;
-    }
-    .latest-book-alert {
-        padding-top: 0.5rem;
-        text-align: center;
-        font-size: 2.5rem !important;
-        position: relative !important;
-        transform: rotate(0deg)!important;
-        -webkit-transform: rotate(0deg)!important;
-        -moz-transform: rotate(0deg)!important;
-        -ms-transform: rotate(0deg)!important;
-        -o-transform: rotate(0deg)!important;
+    .author-latest {
+        &__book-alert {
+            font-size: 2rem !important;
+            padding-top: 0.5rem !important;
+        }
+        &__author {
+            font-size: 2rem !important;
+            padding-top: 0.5rem !important;
+        }
     }
     .book-store__latest {
         margin: 2rem auto 0 auto;
@@ -176,22 +172,23 @@
         font-size: 1.2rem !important;
     }
     .training-who_train {
-        height: 50vh;
+        height: 40vh;
         padding: 0.5rem;
         width: 100%;
         h3 {
             font-size: 1.5rem !important;
         }
         p {
-            font-size: 1.1rem !important;
+            font-size: 1rem !important;
         }
     }
     .training-how_to_book {
-        height: 35vh;
         padding: 0.5rem;
         width: 100%;
         p {
-            font-size: 1.1rem !important;
+            font-size: 1rem !important;
+            margin-top: 0.2rem !important;
+            margin-bottom: 0.2rem !important;
         }
         h3 {
             font-size: 1.5rem !important;
@@ -274,29 +271,33 @@
             font-size: 1.2rem !important;
         }
     }
-    .bookInfo-book {
-        width: 100%;
-        padding: 0.5rem;
-        display: flex;
-        flex-direction: row;
-        p {
-            font-size: 1.2rem;
-            margin-right: 0.5rem;
-        }
-        &_price_img {
-            width: 90vw;
-            height: 50vh;
-            margin: auto!important;
+    .bookInfo {
+        &-book {
             display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 0.2rem;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.5rem;
+            height: 100%;
             img {
-                padding-top: 0.5rem;
-                width: 100%;
-                height: 85%;
+                height: 75%;
+                width: 65%;
+            }
+            .cover__descr {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            &-price__buy {
+                margin: auto !important;
             }
             h3 {
-                font-size: 1.3rem;
+                font-size: 1.3rem !important;
+            }
+            &-description {
+                h2 {
+                    font-size: 1.8rem !important;
+                }
+                p {
+                    font-size: 1.1rem !important;
+                }
             }
         }
     }
@@ -375,6 +376,10 @@
             padding-bottom: 0.5rem;
             margin: 1.5rem;
             margin-bottom: 5rem;
+            padding: 1.2rem;
+        }
+        ul {
+            padding: 1.2rem;
         }
         img {
             height: 50%;
@@ -385,7 +390,7 @@
     .about-the__Qs {
         margin: auto !important;
         display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: 1fr !important;
         height: 100%;
         &-who-is,
         &-when-was {
@@ -431,27 +436,31 @@
             font-size: 1.3rem !important;
         }
     }
-    .book-store__latest-alerts__books {
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        padding-bottom: 1.5rem;
-    }
-    .latest-book-alert {
-        padding-top: 0.5rem;
-        text-align: center;
-        font-size: 2.5rem !important;
-        position: relative !important;
-        transform: rotate(0deg)!important;
-        -webkit-transform: rotate(0deg)!important;
-        -moz-transform: rotate(0deg)!important;
-        -ms-transform: rotate(0deg)!important;
-        -o-transform: rotate(0deg)!important;
+    .author-latest {
+        &__book-alert {
+            font-size: 2rem !important;
+            padding-top: 0.5rem !important;
+        }
+        &__author {
+            font-size: 2rem !important;
+            padding-top: 0.5rem !important;
+        }
     }
     .book-store__latest {
         margin: 2rem auto 0 auto;
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
+        background: rgba(0, 0, 0, 0) !important;
         grid-gap: 0.5rem;
+    }
+    .latest-book-alert {
+        position: relative !important;
+        font-size: 1.5rem !important;
+    }
+    .book-store__books {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-gap: 1.5rem;
     }
     .book-store__book {
         &-price {
@@ -462,31 +471,27 @@
             font-size: 1.2rem !important;
         }
     }
-    .book-store__books {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        grid-gap: 1.5rem;
-    }
     .book-store__btn {
         font-size: 1.2rem !important;
     }
     .training-who_train {
-        height: 50vh;
+        height: 40vh;
         padding: 0.5rem;
         width: 100%;
         h3 {
             font-size: 1.5rem !important;
         }
         p {
-            font-size: 1.1rem !important;
+            font-size: 1rem !important;
         }
     }
     .training-how_to_book {
-        height: 35vh;
         padding: 0.5rem;
         width: 100%;
         p {
-            font-size: 1.1rem !important;
+            font-size: 1rem !important;
+            margin-top: 0.2rem !important;
+            margin-bottom: 0.2rem !important;
         }
         h3 {
             font-size: 1.5rem !important;
@@ -568,29 +573,30 @@
             font-size: 1.2rem !important;
         }
     }
-    .bookInfo-book {
-        width: 100%;
-        padding: 0.5rem;
-        display: flex;
-        flex-direction: row;
-        p {
-            font-size: 1.2rem;
-            margin-right: 0.5rem;
-        }
-        &_price_img {
-            width: 90vw;
-            height: 50vh;
-            margin: auto!important;
+    .bookInfo {
+        &-book {
             display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 0.2rem;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.5rem;
+            height: 100%;
             img {
-                padding-top: 0.5rem;
-                width: 100%;
-                height: 85%;
+                height: 75%;
+                width: 65%;
+            }
+            .cover__descr {
+                display: flex;
+                flex-direction: column-reverse;
             }
             h3 {
-                font-size: 1.3rem;
+                font-size: 1.3rem !important;
+            }
+            &-description {
+                h2 {
+                    font-size: 1.8rem !important;
+                }
+                p {
+                    font-size: 1.1rem !important;
+                }
             }
         }
     }
@@ -657,21 +663,35 @@
     }
     .about-mission,
     .about-vision {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 0.5rem;
+        height: 100%;
+        width: 100%;
+        height: 100vh;
         h3 {
-            font-size: 2.5rem !important;
-            margin-top: 2rem;
+            margin-top: 1rem !important;
+            margin-bottom: 0.2rem !important;
+            padding: 0.5rem !important;
+            font-size: 1.5rem !important;
         }
         p {
-            font-size: 1rem;
-            margin: 0 !important;
-            margin-right: 0.25rem !important;
-            margin-top: -10rem !important;
+            font-size: 1rem !important;
+            padding: 1.2rem !important;
+            margin-top: -2.7rem !important;
+        }
+        ul {
+            padding: 1.2rem !important;
+            font-size: 1rem !important;
+            margin-top: -2.7rem !important;
+            margin-bottom: 0.5rem !important;
         }
         img {
-            visibility: collapse !important;
+            height: 60%;
+            width: 100%;
+            margin-top: 0.2rem !important;
+            margin-bottom: 0.2rem !important;
+            padding: 0.5rem !important;
         }
     }
     .about-the__Qs {
@@ -687,9 +707,12 @@
             background-size: cover;
             background-position: center center;
             padding: 2rem;
+            padding-bottom: 1.5rem !important;
             height: 100vh;
             h3 {
+                margin-top: 0.5rem !important;
                 margin-bottom: 0.5rem !important;
+                padding: 0.5rem !important;
                 font-size: 1.5rem !important;
             }
             p {
@@ -749,18 +772,19 @@
         background: rgba(0, 0, 0, 0.7);
         padding-bottom: 1.5rem;
     }
-    .latest-book-alert {
-        padding-top: 0.5rem;
-        text-align: center;
-        font-size: 1.5rem !important;
-        position: absolute!important;
-        transform: rotate(0deg)!important;
-        -webkit-transform: rotate(0deg)!important;
-        -moz-transform: rotate(0deg)!important;
-        -ms-transform: rotate(0deg)!important;
-        -o-transform: rotate(0deg)!important;
+    .author-latest {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        &__book-alert {
+            font-size: 1.5rem !important;
+            padding-top: 0.25rem !important;
+        }
+        &__author {
+            font-size: 1.5rem !important;
+        }
     }
     .book-store__latest {
+        background: rgba(0, 0, 0, 0) !important;
         margin: 2rem auto 0 auto;
         display: grid !important;
         grid-template-columns: 1fr !important;
@@ -769,6 +793,11 @@
     .latest-book-alert {
         position: relative !important;
         font-size: 1.5rem !important;
+    }
+    .book-store__books {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-gap: 2rem !important;
     }
     .book-store__book {
         &-price {
@@ -787,7 +816,7 @@
         font-size: 1rem !important;
     }
     .training-who_train {
-        height: 50vh;
+        height: 40vh;
         padding: 0.5rem;
         width: 100%;
         h3 {
@@ -798,11 +827,12 @@
         }
     }
     .training-how_to_book {
-        height: 35vh;
         padding: 0.5rem;
         width: 100%;
         p {
-            font-size: 0.8rem !important;
+            font-size: 0.78rem !important;
+            margin-top: 0.2rem !important;
+            margin-bottom: 0.2rem !important;
         }
         h3 {
             font-size: 1rem !important;
@@ -826,7 +856,7 @@
             .testimonial-col-2 {
                 font-size: 1rem !important;
                 span {
-                    font-size: 0.5rem !important;
+                    font-size: 0.7rem !important;
                 }
             }
         }
@@ -883,29 +913,29 @@
             font-size: 0.8rem !important;
         }
     }
-    .bookInfo-book {
-        width: 100%;
-        height: 100vh;
-        padding: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        p {
-            font-size: 1.2rem;
-            margin-right: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        &_price_img {
-            margin: auto!important;
-            margin-top: 2.5rem;
+    .bookInfo {
+        &-book {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 0.2rem;
+            grid-template-columns: 1fr;
+            grid-gap: 0.5rem;
+            height: 100%;
             img {
-                width: 100%;
                 height: 80%;
             }
+            .cover__descr {
+                display: flex;
+                flex-direction: column;
+            }
             h3 {
-                font-size: 1.1rem;
+                font-size: 1.1rem !important;
+            }
+            &-description {
+                h2 {
+                    font-size: 1.5rem !important;
+                }
+                p {
+                    font-size: 1rem !important;
+                }
             }
         }
     }
