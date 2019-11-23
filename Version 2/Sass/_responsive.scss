@@ -1,26 +1,18 @@
 /*---Media Queries --*/
 
+
+/* @media (max-width: 1600px) */
+
+
+/* @media (max-width: 1024px) */
+
+
+/* @media (max-width: 768px)  */
+
+
+/* @media (max-width: 576px)  */
+
 @media (max-width: 1600px) {
-    .about-mission,
-    .about-vision {
-        display: flex !important;
-        flex-direction: row !important;
-        padding: 2rem;
-        h3 {
-            font-size: 2.5rem;
-            margin-top: 2rem;
-        }
-        p {
-            padding-bottom: 0.5rem;
-            margin: 1.5rem;
-            margin-bottom: 5rem;
-        }
-        img {
-            height: 50%;
-            width: 100%;
-            margin: 0rem !important;
-        }
-    }
     .book-store__books {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr) !important;
@@ -67,24 +59,12 @@
 }
 
 @media (max-width: 1024px) {
-    .about-mission,
-    .about-vision {
-        display: flex !important;
-        flex-direction: row !important;
-        padding: 2rem;
+    .about-mission__aim__text {
         h3 {
-            font-size: 2.2rem;
-            margin-top: 1.5rem;
+            font-size: 3rem;
         }
-        p {
-            padding-bottom: 0.5rem;
-            margin: 1.5rem;
-            margin-bottom: 5rem;
-        }
-        img {
-            height: 50%;
-            width: 100%;
-            margin: 0rem !important;
+        ul {
+            padding: 1.2rem;
         }
     }
     .about-the__Qs {
@@ -94,25 +74,21 @@
         height: 100%;
         &-who-is,
         &-when-was {
-            background-size: cover;
-            background-position: center center;
             padding: 2rem;
-            height: 100vh;
+            height: 100%;
             h3 {
-                font-size: 1.7rem;
+                font-size: 2.5rem;
                 background: rgba(0, 0, 0, 0);
-                padding: 0.5rem;
-                margin: 0.5rem;
+                padding: 1rem;
             }
             p {
-                padding: 1rem;
-                margin: 0.5rem;
+                padding: 1.2rem;
             }
         }
     }
     .about__quotes {
-        display: flex;
-        flex-direction: row;
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
         height: 100%;
         width: 95vw;
     }
@@ -271,6 +247,33 @@
             font-size: 1.2rem !important;
         }
     }
+    .author {
+        height: 100%;
+        padding-top: 25vh;
+        h1 {
+            font-size: 2.7rem !important;
+        }
+        h2 {
+            font-size: 1.8rem !important;
+        }
+        p {
+            font-size: 1.4rem !important;
+        }
+        .social-icons {
+            position: relative;
+            left: auto;
+            bottom: 2rem;
+            display: inline;
+            font-size: 1.5rem;
+            padding: 1rem;
+            text-align: center !important;
+        }
+        .fa-twitter,
+        .fa-facebook,
+        .fa-instagram {
+            padding: 0.5rem;
+        }
+    }
     .bookInfo {
         &-book {
             display: grid;
@@ -364,27 +367,22 @@
         }
     }
     .about-mission,
-    .about-vision {
+    .about-aim {
         display: flex !important;
-        flex-direction: row !important;
-        padding: 2rem;
+        flex-direction: column-reverse !important;
+        img {
+            visibility: collapse !important;
+        }
+    }
+    .about-mission__aim__text {
+        display: flex;
+        flex-direction: column;
         h3 {
             font-size: 2.5rem;
             margin-top: 2rem;
         }
-        p {
-            padding-bottom: 0.5rem;
-            margin: 1.5rem;
-            margin-bottom: 5rem;
-            padding: 1.2rem;
-        }
         ul {
             padding: 1.2rem;
-        }
-        img {
-            height: 50%;
-            width: 100%;
-            margin: 0rem !important;
         }
     }
     .about-the__Qs {
@@ -394,8 +392,6 @@
         height: 100%;
         &-who-is,
         &-when-was {
-            background-size: cover;
-            background-position: center center;
             padding: 2rem;
             height: 100vh;
             h3 {
@@ -409,8 +405,8 @@
         }
     }
     .about__quotes {
-        display: flex;
-        flex-direction: row;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
         height: 100%;
         width: 95vw;
     }
@@ -475,7 +471,7 @@
         font-size: 1.2rem !important;
     }
     .training-who_train {
-        height: 40vh;
+        height: 50vh;
         padding: 0.5rem;
         width: 100%;
         h3 {
@@ -571,6 +567,32 @@
             margin: 1.5rem auto !important;
             margin-top: 0.5rem;
             font-size: 1.2rem !important;
+        }
+    }
+    .author {
+        height: 100%;
+        padding-top: 25vh;
+        h1 {
+            font-size: 1.8rem !important;
+        }
+        h2 {
+            font-size: 1.3rem !important;
+        }
+        p {
+            font-size: 1rem !important;
+        }
+        .social-icons {
+            position: relative;
+            left: auto;
+            display: inline;
+            font-size: 1.5rem;
+            padding: 1rem;
+            text-align: center !important;
+        }
+        .fa-twitter,
+        .fa-facebook,
+        .fa-instagram {
+            padding: 0.5rem;
         }
     }
     .bookInfo {
@@ -662,35 +684,23 @@
         }
     }
     .about-mission,
-    .about-vision {
+    .about-aim {
         display: flex !important;
-        flex-direction: column !important;
-        padding: 0.5rem;
-        height: 100%;
-        width: 100%;
-        height: 100vh;
-        h3 {
-            margin-top: 1rem !important;
-            margin-bottom: 0.2rem !important;
-            padding: 0.5rem !important;
-            font-size: 1.5rem !important;
+        flex-direction: column-reverse !important;
+        padding: 1.5rem !important;
+        img {
+            visibility: collapse !important;
         }
-        p {
-            font-size: 1rem !important;
-            padding: 1.2rem !important;
-            margin-top: -2.7rem !important;
+    }
+    .about-mission__aim__text {
+        display: flex;
+        flex-direction: column;
+        h3 {
+            font-size: 1.8rem !important;
+            margin-top: 1rem !important;
         }
         ul {
-            padding: 1.2rem !important;
-            font-size: 1rem !important;
-            margin-top: -2.7rem !important;
-            margin-bottom: 0.5rem !important;
-        }
-        img {
-            height: 60%;
-            width: 100%;
-            margin-top: 0.2rem !important;
-            margin-bottom: 0.2rem !important;
+            font-size: 1.1rem !important;
             padding: 0.5rem !important;
         }
     }
@@ -699,32 +709,29 @@
         display: flex !important;
         flex-direction: column !important;
         height: 100%;
-        width: 100%;
         &-who-is,
         &-when-was {
             display: flex !important;
             flex-direction: column !important;
-            background-size: cover;
-            background-position: center center;
             padding: 2rem;
             padding-bottom: 1.5rem !important;
-            height: 100vh;
+            height: 100%;
             h3 {
                 margin-top: 0.5rem !important;
                 margin-bottom: 0.5rem !important;
                 padding: 0.5rem !important;
-                font-size: 1.5rem !important;
+                font-size: 1.8rem !important;
             }
             p {
-                font-size: 1rem !important;
-                padding: 1rem !important;
+                font-size: 1.1rem !important;
+                padding: 0.5rem !important;
                 margin-top: -0.5rem !important;
             }
         }
     }
     .about__quotes {
-        display: flex;
-        flex-direction: column;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
         height: 100%;
         width: 90vw !important;
     }
@@ -732,7 +739,7 @@
         overflow: hidden;
         padding-bottom: 0.5rem;
         p {
-            font-size: 1rem !important;
+            font-size: 1.1rem !important;
         }
         img {
             height: 40% !important;
@@ -816,7 +823,7 @@
         font-size: 1rem !important;
     }
     .training-who_train {
-        height: 40vh;
+        height: 51.5vh;
         padding: 0.5rem;
         width: 100%;
         h3 {
@@ -829,6 +836,7 @@
     .training-how_to_book {
         padding: 0.5rem;
         width: 100%;
+        height: 100%;
         p {
             font-size: 0.78rem !important;
             margin-top: 0.2rem !important;
@@ -911,6 +919,32 @@
             margin: 1.5rem auto !important;
             margin-top: 0.5rem;
             font-size: 0.8rem !important;
+        }
+    }
+    .author {
+        height: 100%;
+        padding-top: 15vh;
+        h1 {
+            font-size: 1.8rem !important;
+        }
+        h2 {
+            font-size: 1.3rem !important;
+        }
+        p {
+            font-size: 1rem !important;
+        }
+        .social-icons {
+            position: relative;
+            left: auto;
+            display: inline;
+            font-size: 1.5rem;
+            padding: 1rem;
+            text-align: center !important;
+        }
+        .fa-twitter,
+        .fa-facebook,
+        .fa-instagram {
+            padding: 0.5rem;
         }
     }
     .bookInfo {

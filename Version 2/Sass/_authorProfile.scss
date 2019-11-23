@@ -1,7 +1,6 @@
 .author {
     height: 100%;
-    padding-top: 40vh;
-    overflow: hidden;
+    padding-top: 20vh;
     align-items: center;
     text-align: center;
     color: $primary-color;
@@ -16,5 +15,9 @@
             color: $secondary-color;
             font-weight: 700;
         }
+    }
+    p {
+        padding: 0.5rem;
+        text-align: justify;
     }
 }

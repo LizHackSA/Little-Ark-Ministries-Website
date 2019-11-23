@@ -35,16 +35,22 @@ header {
     z-index: 2;
     width: 100%;
     color: set-text-color($primary-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.514) !important;
 }
 
 .navbar-brand__icon {
     height: 50px;
-    border: 1px solid brown;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.514) !important;
+    padding: 0.1rem;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+    @include transition-ease;
+    &:hover {
+        box-shadow: 0 0.5rem 1rem rgba(99, 39, 5, 0.877) !important;
+    }
 }
 
 .social-icons {
@@ -54,13 +60,13 @@ header {
     display: flex;
     flex-direction: column;
     .fa-twitter {
-        color: #1da1f2;
+        color: #6db9e9;
     }
     .fa-facebook {
-        color: #3b5998;
+        color: #5779c0;
     }
     .fa-instagram {
-        color: #8134af;
+        color: #9969b4;
     }
     .fa-twitter,
     .fa-facebook,
@@ -84,7 +90,6 @@ footer {
     }
     .footer-details {
         margin: auto!important;
-        width: 80vw;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         &__contact {

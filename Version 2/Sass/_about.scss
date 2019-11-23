@@ -1,56 +1,49 @@
 .about {
     margin: auto!important;
     padding-top: 3rem;
-    &-mission__vision {
+    &-mission__aim {
         display: grid;
         grid-template-columns: 1fr;
     }
-    &-vision {
+    &-aim {
         background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.3)), url($lionPicture) center top;
     }
     &-mission {
-        background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.3)), url($handsPicture) center top;
+        background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.3)), url($lionPicture) center top;
     }
-    &-vision,
+    &-aim,
     &-mission {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         background-size: cover;
         background-position: center center;
         padding: 5rem;
-        height: 100vh;
+        height: 100%;
         img {
-            width: 100%;
+            width: 80%;
+            height: 100%;
             padding: 1rem;
-            border-radius: 10rem;
-            -webkit-border-radius: 10rem;
-            -moz-border-radius: 10rem;
-            -ms-border-radius: 10rem;
-            -o-border-radius: 10rem;
+            border-radius: 5rem;
+            -webkit-border-radius: 5rem;
+            -moz-border-radius: 5rem;
+            -ms-border-radius: 5rem;
+            -o-border-radius: 5rem;
         }
+    }
+    &-mission__aim__text {
+        display: flex;
+        flex-direction: column;
         h3 {
             text-align: center;
             font-size: 4rem;
             color: $primary-color;
         }
-        p {
-            text-align: left;
-            color: $primary-color;
-            margin-top: 2rem;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-            -webkit-border-radius: 0.5rem;
-            -moz-border-radius: 0.5rem;
-            -ms-border-radius: 0.5rem;
-            -o-border-radius: 0.5rem;
-        }
         ul {
             background: rgba(0, 0, 0, 0.7) !important;
             padding: 0.6rem;
             list-style: none;
-            margin-top: 2rem;
             li {
+                padding: 0.25rem;
                 text-align: left;
                 color: $primary-color !important;
             }
@@ -95,12 +88,12 @@
                 text-align: left;
                 color: $primary-color;
                 margin-top: 0.5rem;
-                padding: 1.5rem;
-                border-radius: 2.5rem;
-                -webkit-border-radius: 2.5rem;
-                -moz-border-radius: 2.5rem;
-                -ms-border-radius: 2.5rem;
-                -o-border-radius: 2.5rem;
+                padding: 0.8rem;
+                border-radius: 0.5rem;
+                -webkit-border-radius: 0.5rem;
+                -moz-border-radius: 0.5rem;
+                -ms-border-radius: 0.5rem;
+                -o-border-radius: 0.5rem;
                 background: rgba(0, 0, 0, 0.7);
             }
         }
@@ -111,8 +104,8 @@
         background-position: center center;
     }
     &__quotes {
-        display: flex;
-        flex-direction: row;
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
         width: 95vw;
         height: 100vh;
         margin: auto !important;
