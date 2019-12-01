@@ -81,7 +81,7 @@
     &-services {
         width: 90vw;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
         padding-top: 2rem;
     }
@@ -128,7 +128,7 @@
         }
         .sub {
             font-style: italic;
-            font-size: small;
+            font-size: medium;
             border-left: 0;
             border-right: 0;
             padding-top: 0.5rem;

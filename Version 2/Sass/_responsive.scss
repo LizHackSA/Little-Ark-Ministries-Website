@@ -59,11 +59,11 @@
 }
 
 @media (max-width: 1024px) {
-    .about-mission__aim__text {
+    .about-mission__Vision__text {
         h3 {
             font-size: 3rem;
         }
-        ul {
+        p {
             padding: 1.2rem;
         }
     }
@@ -202,7 +202,7 @@
             font-size: 1.7rem !important;
         }
     }
-    .parenting-tip_of_day {
+    .parenting-letter {
         p {
             font-size: 1.1rem !important;
         }
@@ -367,21 +367,21 @@
         }
     }
     .about-mission,
-    .about-aim {
+    .about-Vision {
         display: flex !important;
         flex-direction: column-reverse !important;
         img {
             visibility: collapse !important;
         }
     }
-    .about-mission__aim__text {
+    .about-mission__Vision__text {
         display: flex;
         flex-direction: column;
         h3 {
             font-size: 2.5rem;
             margin-top: 2rem;
         }
-        ul {
+        p {
             padding: 1.2rem;
         }
     }
@@ -524,7 +524,7 @@
             font-size: 1.7rem !important;
         }
     }
-    .parenting-tip_of_day {
+    .parenting-letter {
         p {
             font-size: 1.1rem !important;
         }
@@ -684,7 +684,7 @@
         }
     }
     .about-mission,
-    .about-aim {
+    .about-Vision {
         display: flex !important;
         flex-direction: column-reverse !important;
         padding: 1.5rem !important;
@@ -692,14 +692,14 @@
             visibility: collapse !important;
         }
     }
-    .about-mission__aim__text {
+    .about-mission__Vision__text {
         display: flex;
         flex-direction: column;
         h3 {
             font-size: 1.8rem !important;
             margin-top: 1rem !important;
         }
-        ul {
+        p {
             font-size: 1.1rem !important;
             padding: 0.5rem !important;
         }
@@ -877,7 +877,7 @@
             font-size: 1.5rem !important;
         }
     }
-    .parenting-tip_of_day {
+    .parenting-letter {
         p {
             font-size: 0.8rem !important;
         }

@@ -57,8 +57,15 @@
                 font-weight: bold;
             }
         }
+        a {
+            color: rgba(154, 248, 135, 0.897);
+            @include transition-ease;
+            &:hover {
+                color: $secondary-color;
+            }
+        }
     }
-    &-testimonials {
+    &-topics {
         width: 90vw;
         margin: auto!important;
         display: grid;
@@ -70,6 +77,63 @@
             text-align: center;
             font-weight: bold;
             color: $secondary-color;
+            padding-bottom: 0.5rem;
+            border-bottom: 1.5px solid $secondary-color;
+        }
+    }
+    &-topic-collection {
+        width: 90vw;
+        margin: auto!important;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+    &__topic {
+        position: relative;
+        border-bottom: 5px solid rgba(37, 37, 230, 0.918);
+        overflow: wrap;
+        padding: 0.2rem;
+        .topic-head {
+            font-size: 1.8rem;
+            font-weight: bold;
+            justify-content: flex-start;
+            padding-bottom: 0.3rem;
+            margin-bottom: 0.2rem;
+            border-bottom: 1px solid rgba(25, 135, 168, 0.753);
+        }
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.514) !important;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+    }
+    .topic-body {
+        padding-top: 0.5rem;
+        font-size: 1.15rem;
+        font-weight: 300;
+        text-align: justify;
+        padding: 0.5rem;
+    }
+    .many-more {
+        font-weight: bold;
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+    &-testimonials {
+        width: 90vw;
+        margin: auto!important;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        h3 {
+            padding-top: 1.5rem;
+            font-size: 3rem;
+            text-align: center;
+            font-weight: bold;
+            color: $secondary-color;
+            padding-bottom: 0.3rem;
+            border-bottom: 1.5px solid $secondary-color;
         }
     }
     &-testimonials-collection {
@@ -128,7 +192,10 @@
     }
     .testimonial-body {
         padding-top: 0.5rem;
-        color: $secondary-color;
+        font-size: 1.15rem;
+        font-weight: 300;
+        text-align: justify;
+        padding: 0.5rem;
     }
     &-gallary {
         width: 90vw;

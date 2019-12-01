@@ -1,17 +1,17 @@
-@import './config';
-@import './home';
-@import './about';
-@import './bookstore';
-@import './bookInfo';
-@import './authorProfile';
-@import './training';
-@import './parenting';
-@import './responsive';
+@import "./config";
+@import "./home";
+@import "./about";
+@import "./bookstore";
+@import "./bookInfo";
+@import "./authorProfile";
+@import "./training";
+@import "./parenting";
+@import "./responsive";
 body {
     background: $primary-color;
     color: set-text-color($primary-color);
     height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
 }
 
@@ -87,29 +87,47 @@ footer {
     a {
         color: greenyellow;
         text-decoration: none;
+        @include transition-ease;
+        &:hover {
+            text-decoration: none;
+        }
     }
     .footer-details {
-        margin: auto!important;
+        margin: auto !important;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         &__contact {
             text-align: center;
+            address {
+                p {
+                    padding: 0.1rem !important;
+                    padding-top: 0.01rem !important;
+                }
+            }
         }
         &__developer {
             text-align: center;
-        }
-    }
-    .contact-develer {
-        display: flex;
-        flex-direction: column;
-        &__email,
-        &__webaddress {
-            text-align: center;
-            padding: 0.25rem;
-            @include transition-ease;
-            &:hover {
-                color: $secondary-color;
-                text-decoration: none;
+            img {
+                height: 40%;
+                width: 50%;
+                margin-bottom: 0.5rem;
+                background-color: #6db9e9;
+                border: 2px solid rgba(27, 24, 29, 0.589);
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.514) !important;
+                border-radius: 0.45rem;
+                -webkit-border-radius: 0.45rem;
+                -moz-border-radius: 0.45rem;
+                -ms-border-radius: 0.45rem;
+                -o-border-radius: 0.45rem;
+            }
+            .contact-develer {
+                display: flex;
+                flex-direction: column;
+                &__email,
+                &__webaddress {
+                    text-align: center;
+                    padding: 0.25rem;
+                }
             }
         }
     }

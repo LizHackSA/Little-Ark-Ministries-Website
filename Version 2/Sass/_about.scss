@@ -1,17 +1,17 @@
 .about {
     margin: auto!important;
     padding-top: 3rem;
-    &-mission__aim {
+    &-mission__Vision {
         display: grid;
         grid-template-columns: 1fr;
     }
-    &-aim {
-        background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.3)), url($lionPicture) center top;
+    &-Vision {
+        background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.3)), url($handsPicture) center top;
     }
     &-mission {
         background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.3)), url($lionPicture) center top;
     }
-    &-aim,
+    &-Vision,
     &-mission {
         display: flex;
         flex-direction: row;
@@ -30,7 +30,7 @@
             -o-border-radius: 5rem;
         }
     }
-    &-mission__aim__text {
+    &-mission__Vision__text {
         display: flex;
         flex-direction: column;
         h3 {
@@ -38,15 +38,11 @@
             font-size: 4rem;
             color: $primary-color;
         }
-        ul {
+        p {
             background: rgba(0, 0, 0, 0.7) !important;
             padding: 0.6rem;
-            list-style: none;
-            li {
-                padding: 0.25rem;
-                text-align: left;
-                color: $primary-color !important;
-            }
+            text-align: left;
+            color: $primary-color !important;
             border-radius: 0.5rem;
             -webkit-border-radius: 0.5rem;
             -moz-border-radius: 0.5rem;
