@@ -1,14 +1,45 @@
 .parenting {
     &-letter {
-        height: 50vh;
+        padding: 1.5rem;
+        padding-top: 20vh;
+        height: 100%;
         width: 100%;
         color: $primary-color;
-        background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.3)), url($dummyPicture) center top;
+        background: linear-gradient( to right, rgba($darkBg, 1.2), rgba($darkBg, 0.9)), url($dummyPicture) center top;
         background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
+        &__body {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            &-style {
+                strong {
+                    display: flex;
+                    flex-direction: row;
+                    text-align: center;
+                    span {
+                        background-color: $secondary-color;
+                        font-weight: bold;
+                        font-size: 1.1rem;
+                        padding: 1.5rem;
+                        border-radius: 1.5rem;
+                        -webkit-border-radius: 1.5rem;
+                        -moz-border-radius: 1.5rem;
+                        -ms-border-radius: 1.5rem;
+                        -o-border-radius: 1.5rem;
+                    }
+                    .style-header {
+                        padding: 1.5rem;
+                        background-color: brown;
+                    }
+                }
+            }
+        }
+        .ps-hope {
+            font-style: italic;
+        }
         p {
             font-size: 1.5rem;
             margin-bottom: 2rem;
@@ -24,7 +55,6 @@
         h4 {
             font-style: italic;
             font-weight: bold;
-            font-size: 3rem;
         }
     }
     &__items {
