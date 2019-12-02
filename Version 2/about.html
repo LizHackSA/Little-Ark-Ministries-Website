@@ -10,6 +10,18 @@
     <meta name="author" content="LizHack SA">
     <link href="Assets/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="Assets/Css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="Assets/img/favicon/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="Assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="Assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+
+
 </head>
 
 <body>
@@ -40,9 +52,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="bookStore.html"> Book Store </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="childrenProg.html"> Children Program </a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" type="button" id="childrenMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Children
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="childrenMenu">
+                                <a class="dropdown-item children-nav" href="childrenProg.html"> Children Training </a>
+                                <a class="dropdown-item children-nav" href="childrenBtp.html"> Children Birthday Parties
+                                </a>
+                            </div>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="training.html"> Training </a>
                         </li>
@@ -51,6 +72,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#litDiscussions"> Discussions </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="charity.html"> Charity </a>
                         </li>
                     </ul>
                 </div>
@@ -61,31 +85,34 @@
 
     <main class="about">
 
-        <section class="about-mission__Vision">
-            <!-- Mission -->
-            <div class="about-mission">
-                <div>
-                    <img src="Assets/img/icon.PNG" alt="Mission">
-                </div>
-                <div class="about-mission__Vision__text">
-                    <h3>MISSION</h3>
-                    <p class="lead">
-                        The mission of Little Ark Ministries is to recognise that we live in end times, as a period between the first and the second advent of Christ. This recognition has created a sense of urgency to reach and gather every child into the boat, empower their
-                        mindset in pursuit to know that anytime we will be going to our heavenly home. In pursuit of this noble idea, Little Ark Ministries is determined to reach as many children as possible with a speed faster than that of light.
-                    </p>
-                </div>
-            </div>
+        <section class="about-mission__Vision-bg">
 
-            <!-- Vision -->
-            <div class="about-Vision">
-                <div>
-                    <img src="Assets/img/icon.PNG" alt="Vision">
+            <div class="about-mission__vision">
+                <!-- Mission -->
+                <div class="about-missionVision">
+                    <div>
+                        <img src="Assets/img/missionIcon.png" alt="Mission">
+                    </div>
+                    <div class="about-mission__Vision__text">
+                        <h3>MISSION</h3>
+                        <p class="lead">
+                            The mission of Little Ark Ministries is to recognise that we live in end times, as a period between the first and the second advent of Christ. This recognition has created a sense of urgency to reach and gather every child into the boat, empower their
+                            mindset in pursuit to know that anytime we will be going to our heavenly home. In pursuit of this noble idea, Little Ark Ministries is determined to reach as many children as possible with a speed faster than that of light.
+                        </p>
+                    </div>
                 </div>
-                <div class="about-mission__Vision__text">
-                    <h3>Vision</h3>
-                    <p class="lead">
-                        Let us give our children the mindset we wish we had when we were in their age.
-                    </p>
+
+                <!-- Vision -->
+                <div class="about-missionVision">
+                    <div>
+                        <img src="Assets/img/visionIcon.png" alt="Vision">
+                    </div>
+                    <div class="about-mission__Vision__text">
+                        <h3>Vision</h3>
+                        <p class="lead">
+                            Let us give our children the mindset we wish we had when we were in their age.
+                        </p>
+                    </div>
                 </div>
             </div>
 

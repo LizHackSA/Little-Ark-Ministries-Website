@@ -64,13 +64,13 @@
             }
         }
         &__quote-1 {
-            background-image: url("../img/quotes/hands.jpg");
+            background-image: url($handsPicture);
         }
         &__quote-2 {
-            background-image: url("../img/quotes/lion.jpg");
+            background-image: url($lionPicture);
         }
         &__quote-3 {
-            background-image: url("../img/quotes/ostr.jpg");
+            background-image: url($ostriPicture);
         }
         &__quote-1,
         &__quote-2,

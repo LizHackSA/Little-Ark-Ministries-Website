@@ -67,7 +67,6 @@
     &__tip-1,
     &__tip-2,
     &__tip-3 {
-        background-position: center center;
         position: relative;
         overflow: hidden;
         img {
@@ -98,15 +97,12 @@
             width: 100%;
             background-size: cover;
             margin: auto!important;
-            background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.7)), url($dummyPicture) center top;
         }
     }
     &__quote {
-        background-size: cover;
         display: flex;
         flex-direction: row;
         margin: auto!important;
-        background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.7)), url($lionPicture) center top;
         img {
             height: 70%;
             width: 80%;

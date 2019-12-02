@@ -10,6 +10,16 @@
     <meta name="author" content="LizHack SA">
     <link href="Assets/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="Assets/Css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="Assets/img/favicon/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="Assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="Assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -41,12 +51,15 @@
                             <a class="nav-link" href="bookStore.html"> Book Store </a>
                         </li>
 
-                        <!-- Do a drop down menu -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="childrenBtp.html"> Children Birthday Parties </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="childrenProg.html"> Children Program </a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" type="button" id="childrenMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Children
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="childrenMenu">
+                                <a class="dropdown-item children-nav" href="childrenProg.html"> Children Training </a>
+                                <a class="dropdown-item children-nav" href="childrenBtp.html"> Children Birthday Parties
+                                </a>
+                            </div>
                         </li>
 
                         <li class="nav-item">
@@ -59,7 +72,7 @@
                             <a class="nav-link" href="#litDiscussions"> Discussions </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Charity </a>
+                            <a class="nav-link" href="charity.html"> Charity </a>
                         </li>
 
 
@@ -155,7 +168,7 @@
 
                     <div class="carousel-item home-favQuotes__quote-3">
                         <div class="home-favQuotes__quote">
-                            <img src="Assets/img/quotes/ostr.jpg" alt="Ostrich">
+                            <img src="Assets/img/quotes/ostrich-family.jpg" alt="Ostrich">
                             <p class="lead"> Little Ark step back, empower children and support them from behind. Little Ark walk fast to follow children, for she is their leader! </p>
                         </div>
                     </div>
@@ -172,36 +185,56 @@
                 <img class="" src="Assets/img/DirectorProfile/icon.PNG" alt="service one Image">
                 <h3> Books For children </h3>
                 <p>
-                    Here at Little Ark Ministries we believe in empowering children through books and also teach them valuable life lessons through books whose basis is the Bible.
+                    A little reading each day will result in a wealth of valuable information in a very short period of time. But if we fail to set aside the time, if we fail to pick up the book, if we fail to exercise the discipline, then ignorance will quickly move in
+                    to fill the void.
                 </p>
                 <a class="btn btn-primary" href="bookStore.html"> View Book Store </a>
             </div>
 
             <div class="home-services__item">
-                <img class="" src="Assets/img/DirectorProfile/icon.PNG" alt="service two Image">
-                <h3> Children Program </h3>
+                <img class="" src="Assets/img/child-training/washFeet.jpg" alt="service two Image">
+                <h3> Children Training </h3>
                 <p>
-                    We offer children programmes so that they can have a better understanding of God and the Bible.
+                    We want them to grow up and become adults with good character.
                 </p>
-                <a class="btn btn-primary" href="childrenProg.html"> Children Program </a>
+                <a class="btn btn-primary" href="childrenProg.html"> Children Training </a>
             </div>
 
             <div class="home-services__item">
-                <img class="" src="Assets/img/DirectorProfile/icon.PNG" alt="service two Image">
+                <img class="" src="Assets/img/child-fun/fun.jpg" alt="service two Image">
+                <h3> Children Birthday Party </h3>
+                <p>
+                    We also enjoy having fun with children and ensuring that they are happy.
+                </p>
+                <a class="btn btn-primary" href="childrenBtp.html"> Children Birthday Party </a>
+            </div>
+
+            <div class="home-services__item">
+                <img class="" src="Assets/img/trainingGallary/training1.jpg" alt="service two Image">
                 <h3> Training </h3>
                 <p>
-                    We offer training to anyone who would like to understand children more and interact with them in a way that will help them interact.
+                    Little Ark believes in the continual training and mentoring. We keep up with new developments and strategies in education to remain relevant.
                 </p>
                 <a class="btn btn-primary" href="training.html"> Training </a>
             </div>
 
             <div class="home-services__item">
-                <img class="" src="Assets/img/DirectorProfile/icon.PNG" alt="service three Image">
+                <img class="" src="Assets/img/quotes/Confessions.jpg" alt="service three Image">
                 <h3> Parenting Tips </h3>
                 <p>
-                    We not only focus on children, we also focus on their parents and provide tips that will allow parents interact with their children and learn more about them in a fun way. A strong equals a happy childhood.
+                    As parents, don’t we all just want to raise “good kids”? We want them to be thankful, polite, joyful, and well behaved.
+
                 </p>
                 <a class="btn btn-primary" href="parenting.html"> Parenting </a>
+            </div>
+
+            <div class="home-services__item">
+                <img class="" src="Assets/img/DirectorProfile/icon.PNG" alt="service three Image">
+                <h3> Charity Program </h3>
+                <p>
+                    Litle ark also focuses on doing charity work.
+                </p>
+                <a class="btn btn-primary" href="charity.html"> Charity </a>
             </div>
         </section>
 
