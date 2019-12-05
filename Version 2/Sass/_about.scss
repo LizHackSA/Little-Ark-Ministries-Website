@@ -123,6 +123,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0rem;
         img {
+            margin: auto;
             width: 50%;
             border-radius: 5rem;
             -webkit-border-radius: 5rem;
@@ -130,15 +131,26 @@
             -ms-border-radius: 5rem;
             -o-border-radius: 5rem;
         }
-        h3 {
-            color: $primary-color;
-            font-size: 2.5rem;
-        }
-        p {
-            color: $primary-color;
-        }
-        #message {
-            font-style: italic;
+        &__text {
+            margin: auto;
+            h3 {
+                display: flex;
+                flex-direction: column;
+                color: $primary-color;
+                font-size: 2.5rem;
+                span {
+                    font-size: 1.5rem;
+                    font-style: italic;
+                    font-weight: 300;
+                    text-decoration: underline;
+                }
+            }
+            p {
+                color: $primary-color;
+            }
+            #message {
+                font-style: italic;
+            }
         }
     }
     .social-icons {
