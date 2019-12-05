@@ -5,8 +5,11 @@
 @import "./bookstore";
 @import "./bookInfo";
 @import "./authorProfile";
+@import "./childrenProg";
+@import "./childrenParty";
 @import "./training";
 @import "./parenting";
+@import "./charity";
 @import "./responsive";
 body {
     background: $primary-color;
@@ -23,8 +26,31 @@ h3 {
 }
 
 a {
-    color: set-text-color($primary-color);
     text-decoration: none;
+    color: greenyellow;
+    @include transition-ease;
+    &:hover {
+        color: $secondary-color;
+        text-decoration: none;
+    }
+}
+
+img {
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.foucusNotice {
+    @include transition-ease;
+    background: greenyellow;
+}
+
+p {
+    font-size: 1.15rem;
+    font-weight: 300;
 }
 
 .text-secondary {
@@ -51,6 +77,250 @@ header {
     @include transition-ease;
     &:hover {
         box-shadow: 0 0.5rem 1rem rgba(99, 39, 5, 0.877) !important;
+    }
+}
+
+.how_to_book {
+    color: $primary-color;
+    margin: auto;
+    padding: 0.5rem;
+    background: linear-gradient(to right, rgba($darkBg, 0.9), rgba($darkBg, 0.5)), url($dummyPicture) center top;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        margin-top: 0.2rem !important;
+        margin-bottom: 0.2rem !important;
+        padding: 0.5rem;
+        background: rgba(0, 0, 0, 0.582);
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        span {
+            color: $secondary-color;
+            font-weight: bold;
+        }
+    }
+}
+
+.topics_and_heading {
+    width: 90vw;
+    margin: auto !important;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    h3 {
+        padding-top: 0.5rem;
+        font-size: 3rem;
+        text-align: center;
+        font-weight: bold;
+        color: $secondary-color;
+        padding-bottom: 0.5rem;
+        border-bottom: 1.5px solid $secondary-color;
+    }
+}
+
+.topic-collection {
+    width: 90vw;
+    margin: auto !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.topic {
+    position: relative;
+    border-bottom: 5px solid rgba(37, 37, 230, 0.918);
+    overflow: wrap;
+    padding: 0.2rem;
+    .topic-head {
+        font-size: 1.8rem;
+        font-weight: bold;
+        justify-content: flex-start;
+        padding-bottom: 0.3rem;
+        margin-bottom: 0.2rem;
+        border-bottom: 1px solid rgba(25, 135, 168, 0.753);
+    }
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.514) !important;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.topic-body {
+    padding-top: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 300;
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+.many-more {
+    p {
+        font-weight: bold !important;
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+}
+
+.testimonials_and_heading {
+    width: 90vw;
+    margin: auto !important;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    h3 {
+        padding-top: 1.5rem;
+        font-size: 3rem;
+        text-align: center;
+        font-weight: bold;
+        color: $secondary-color;
+        padding-bottom: 0.3rem;
+        border-bottom: 1.5px solid $secondary-color;
+    }
+}
+
+.testimonials-collection {
+    width: 90vw;
+    margin: auto !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.testimonial {
+    position: relative;
+    border-bottom: 5px solid $secondary-color;
+    overflow: wrap;
+    padding: 0.2rem;
+    .testimonial-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-bottom: 0.25rem;
+        margin-bottom: 0.2rem;
+        border-bottom: 1px solid rgba(25, 135, 168, 0.753);
+        .testimonial-col-1 {
+            font-weight: bold;
+            font-size: 3rem;
+            color: rgba(220, 20, 60, 0.63);
+        }
+        .testimonial-col-2 {
+            display: grid;
+            font-size: 2rem;
+            grid-template-columns: 1fr;
+            text-align: left;
+            font-weight: bold;
+            color: rgba(218, 100, 4, 0.897);
+            padding-left: 0.25rem;
+            span {
+                font-weight: normal;
+                font-style: italic;
+                font-size: 1rem;
+            }
+        }
+        &:hover {
+            text-decoration: none;
+            .testimonial-col-1:hover {
+                color: rgba(0, 0, 255, 0.514);
+            }
+            .testimonial-col-2:hover {
+                color: rgba(153, 0, 255, 0.74);
+            }
+        }
+    }
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.514) !important;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.testimonial-body {
+    padding-top: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 300;
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+.gallary_and_heading {
+    height: 100%;
+    margin: auto !important;
+    background: linear-gradient( to right, rgba($darkBg, 0.7), rgba($darkBg, 0.4)), url($dummyPicture) center center;
+    background-size: cover;
+    padding-bottom: 3rem;
+    h4 {
+        background: $primary-color;
+        text-align: center;
+        margin-top: 1.5rem;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: $secondary-color;
+        padding-bottom: 0.3rem;
+        border-bottom: 1.5px solid $secondary-color;
+    }
+}
+
+.gallary__collection {
+    width: 90vw;
+    margin: auto;
+}
+
+.gallary__collection-item {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    img {
+        margin: auto;
+        width: 70%;
+        height: 67%;
+    }
+    .gallary-item {
+        display: flex;
+        height: 100vh;
+        width: 80%;
+        margin: auto!important;
+    }
+}
+
+.gallary__carousel-indicators {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style: none;
+    li {
+        margin-top: -6.5rem;
+        box-sizing: content-box;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        opacity: 0.7;
+        transition: opacity 0.6s ease;
+        img {
+            width: 80%;
+            height: 60%;
+            margin-right: 3px;
+            margin-left: 3px;
+            cursor: pointer;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
@@ -85,14 +355,6 @@ footer {
     padding: 1rem;
     background-color: $darkBg;
     color: $primary-color;
-    a {
-        color: greenyellow;
-        text-decoration: none;
-        @include transition-ease;
-        &:hover {
-            text-decoration: none;
-        }
-    }
     .footer-details {
         margin: auto !important;
         display: grid;

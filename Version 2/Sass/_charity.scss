@@ -1,0 +1,27 @@
+.charity {
+    background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.6)), url($dummyPicture) center center;
+    background-size: cover;
+    background-position: center center;
+    &__appeal {
+        padding-top: 20vh;
+        padding-bottom: 8vh;
+        width: 80vw;
+        margin: auto;
+        text-align: justify;
+    }
+    p {
+        background: rgba(15, 15, 15, 0.733);
+        color: $primary-color;
+        padding: 1.1rem;
+        border-bottom: 2px solid rgba(136, 255, 0, 0.384);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.514) !important;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+    }
+    .how_to_book {
+        background: none;
+    }
+}

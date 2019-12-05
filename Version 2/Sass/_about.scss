@@ -1,6 +1,6 @@
 .about {
     margin: auto!important;
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     &-mission__Vision-bg {
         background-size: cover;
         background: linear-gradient( to right, rgba($darkBg, 0.9), rgba($darkBg, 0.5)), url($lionPicture) center top;
@@ -14,19 +14,16 @@
         flex-direction: row;
         padding: 5rem;
         height: 100vh;
+        margin: auto;
+        align-items: center;
         img {
-            width: 100%;
-            height: 50%;
+            width: 25vh;
+            height: 40vh;
+            margin: auto;
         }
     }
     &-mission__Vision__text {
-        display: flex;
-        flex-direction: column;
-        h3 {
-            text-align: center;
-            font-size: 4rem;
-            color: $primary-color;
-        }
+        margin: auto;
         p {
             background: rgba(0, 0, 0, 0.7) !important;
             padding: 0.6rem;
@@ -96,11 +93,12 @@
         margin: auto !important;
         padding: 2rem 0.5rem;
         &-quote {
-            margin: 0.5rem;
+            margin: auto 0.5rem;
             border: 2px solid $secondary-color;
             overflow-y: auto;
             scroll-behavior: smooth;
             scrollbar-width: thin;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.514) !important;
             img {
                 width: 100%;
                 height: 50%;

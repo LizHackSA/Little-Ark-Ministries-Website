@@ -1,7 +1,6 @@
 .training {
-    padding-bottom: 2rem;
     &-who_train {
-        height: 50vh;
+        height: 45vh;
         color: $primary-color;
         padding: 0.5rem;
         width: 100%;
@@ -28,7 +27,7 @@
         }
     }
     &-how_to_book {
-        height: 70vh;
+        height: 60vh;
         color: $primary-color;
         width: 100%;
         padding: 0.5rem;
@@ -56,190 +55,6 @@
                 color: $secondary-color;
                 font-weight: bold;
             }
-        }
-        a {
-            color: rgba(154, 248, 135, 0.897);
-            @include transition-ease;
-            &:hover {
-                color: $secondary-color;
-            }
-        }
-    }
-    &-topics {
-        width: 90vw;
-        margin: auto!important;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2rem;
-        h3 {
-            padding-top: 0.5rem;
-            font-size: 3rem;
-            text-align: center;
-            font-weight: bold;
-            color: $secondary-color;
-            padding-bottom: 0.5rem;
-            border-bottom: 1.5px solid $secondary-color;
-        }
-    }
-    &-topic-collection {
-        width: 90vw;
-        margin: auto!important;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
-    }
-    &__topic {
-        position: relative;
-        border-bottom: 5px solid rgba(37, 37, 230, 0.918);
-        overflow: wrap;
-        padding: 0.2rem;
-        .topic-head {
-            font-size: 1.8rem;
-            font-weight: bold;
-            justify-content: flex-start;
-            padding-bottom: 0.3rem;
-            margin-bottom: 0.2rem;
-            border-bottom: 1px solid rgba(25, 135, 168, 0.753);
-        }
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.514) !important;
-        border-radius: 0.5rem;
-        -webkit-border-radius: 0.5rem;
-        -moz-border-radius: 0.5rem;
-        -ms-border-radius: 0.5rem;
-        -o-border-radius: 0.5rem;
-    }
-    .topic-body {
-        padding-top: 0.5rem;
-        font-size: 1.15rem;
-        font-weight: 300;
-        text-align: justify;
-        padding: 0.5rem;
-    }
-    .many-more {
-        font-weight: bold;
-        font-size: 1.5rem;
-        font-style: italic;
-    }
-    &-testimonials {
-        width: 90vw;
-        margin: auto!important;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2rem;
-        h3 {
-            padding-top: 1.5rem;
-            font-size: 3rem;
-            text-align: center;
-            font-weight: bold;
-            color: $secondary-color;
-            padding-bottom: 0.3rem;
-            border-bottom: 1.5px solid $secondary-color;
-        }
-    }
-    &-testimonials-collection {
-        width: 90vw;
-        margin: auto!important;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
-    }
-    &__testimonial {
-        position: relative;
-        border-bottom: 5px solid $secondary-color;
-        overflow: wrap;
-        padding: 0.2rem;
-        .testimonial-head {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            padding-bottom: 0.25rem;
-            margin-bottom: 0.2rem;
-            border-bottom: 1px solid rgba(25, 135, 168, 0.753);
-            .testimonial-col-1 {
-                font-weight: bold;
-                font-size: 3rem;
-                color: rgba(220, 20, 60, 0.63);
-            }
-            .testimonial-col-2 {
-                display: grid;
-                font-size: 2rem;
-                grid-template-columns: 1fr;
-                text-align: left;
-                font-weight: bold;
-                padding-left: 0.25rem;
-                span {
-                    font-weight: normal;
-                    font-style: italic;
-                    font-size: 1rem;
-                }
-            }
-            &:hover {
-                text-decoration: none;
-                .testimonial-col-1:hover {
-                    color: rgba(0, 0, 255, 0.514);
-                }
-                .testimonial-col-2:hover {
-                    color: rgba(153, 0, 255, 0.74);
-                }
-            }
-        }
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.514) !important;
-        border-radius: 0.5rem;
-        -webkit-border-radius: 0.5rem;
-        -moz-border-radius: 0.5rem;
-        -ms-border-radius: 0.5rem;
-        -o-border-radius: 0.5rem;
-    }
-    .testimonial-body {
-        padding-top: 0.5rem;
-        font-size: 1.15rem;
-        font-weight: 300;
-        text-align: justify;
-        padding: 0.5rem;
-    }
-    &-gallary {
-        width: 60vw;
-        margin: auto!important;
-        h4 {
-            text-align: center;
-            margin-top: 1.5rem;
-            font-weight: bold;
-            font-size: 2.5rem;
-        }
-    }
-    &-gallary__collection-item {
-        height: 50%;
-        border-bottom: 5px solid $secondary-color;
-        border-radius: 0.5rem;
-        -webkit-border-radius: 0.5rem;
-        -moz-border-radius: 0.5rem;
-        -ms-border-radius: 0.5rem;
-        -o-border-radius: 0.5rem;
-    }
-    &-gallary__carousel-indicators {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-        justify-content: center;
-        list-style: none;
-    }
-    &-gallary__carousel-indicators li {
-        box-sizing: content-box;
-        -ms-flex: 0 1 auto;
-        flex: 0 1 auto;
-        opacity: .5;
-        transition: opacity 0.6s ease;
-        img {
-            width: 80%;
-            height: 60%;
-            margin-right: 3px;
-            margin-left: 3px;
-            cursor: pointer;
-            border-top: 10px solid transparent;
-            border-bottom: 10px solid transparent;
-        }
-        &:hover {
-            opacity: 1;
         }
     }
     .social-icons {
